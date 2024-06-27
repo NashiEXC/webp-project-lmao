@@ -1,7 +1,38 @@
 <html>
 	<head>
-		<meta name = "viewport" content="width = device-width, initial-scale = 1">
-		<title >
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1"/>
+		<meta charset = "UTF-8"/>
+		<meta http-equiv = "X-UA-Compatible" content = "IE = edge"/>
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0"/>
+		<style>
+			.popup {
+				position: fixed;
+				z-index: 1;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+				background-color: rgba(0, 0, 0, 0.4);
+				display: none;
+			}
+			.popup-content {
+				background-color: white;
+				margin: 10% auto;
+				padding: 20px;
+				border: 1px solid cyan;
+				width: 30%;
+				font-weight: bolder;
+			}
+			.popup-content button {
+				display: block;
+				margin: 0 auto;
+			}
+			.show {
+				display: block;
+			}
+		</style>
+		<title>
 				Vapor - Library
 		</title>
 		<link href = "style.css" rel = "stylesheet">
@@ -82,33 +113,124 @@
 					</table>
 				</td>
 				<td>
-					<table style = "width: 470px; height: 235.5; border-color: black; border-radius: 15px;" border = "1"  cellpadding = "0" cellspacing = "10">
+					<table style = "width: 900px; height: 235.5; border-color: black; border-radius: 15px;" border = "1"  cellpadding = "0" cellspacing = "10">
 						<tr style = "width: 100%;">
-							<td class = "others" valign = "bottom" style = "width: 33.3%; background-image: url(penguin.png);"> 
-								<form name = "play" method = "get" action = "new.png">
-									<button type = "submit" class = "inbut">
-										<img style = "margin-left: -6px; margin-bottom: -16px;" src = play.png alt = "Install">
+							<td class = "others" valign = "bottom" style = "width: 16.6%; background-image: url(penguin.png);"> 
+									<button id = "playbuttpen" class = "inbut">
+										<img style = "margin-left: -10px; margin-bottom: -1px;" src = play.png alt = "Install">
 									</button>
-								</form>
+									<div id = "popupcontent" class = "popup">
+										<div class = "popup-content">
+											<h1 class = "memefont">
+												Launching The Greatest Penguin Heist Of All Time... noot noot
+											</h1>
+											<button class = "memefont" id = "cancel">
+												Cancel
+											</button>
+										</div>
+									</div>
 							</td>
-							<td class = "others" valign = "bottom" style = "width: 33.3%; background-image: url(pd3.png)">
-								<form name = "play" method = "get" action = "new.png">
-									<button type = "submit" class = "inbut">
-										<img style = "margin-left: -12px; margin-bottom: -16px;" src = dl.png alt = "Install">
-									</button>
-								</form>
+							<td class = "others" valign = "bottom" style = "width: 16.6%; background-image: url(pd3.png)">
+								<button id = "playpd3" class = "inbut">
+									<img style = "margin-left: -10px; margin-bottom: -1px;" src = play.png alt = "Install">
+								</button>
+								<div id = "popupcontent" class = "popup">
+									<div class = "popup-content">
+										<h1 class = "memefont">
+											Launching Payday 3... Lets see those helmets fly!
+										</h1>
+										<button class = "memefont" id = "cancel">
+											Cancel
+										</button>
+									</div>
+								</div>
 							</td>
-							<td class = "others" valign = "bottom" style = "width: 33.3%; background-image: url(hl1.png)"">
-								<form name = "play" method = "get" action = "new.png">
-									<button type = "submit" class = "inbut">
-										<img style = "margin-left: -7px; margin-bottom: -16px;" src = no.png alt = "Install">
-									</button>
-								</form>
+							<td class = "others" valign = "bottom" style = "width: 16.6%; background-image: url(doom.png)"">
+								<button id = "playdoom" class = "inbut">
+									<img style = "margin-left: -10px; margin-bottom: -1px;" src = play.png alt = "Install">
+								</button>
+								<div id = "popupcontent" class = "popup">
+									<div class = "popup-content">
+										<h1 class = "memefont">
+											Launching DOOM... Rip and tear, until it is done!
+										</h1>
+										<button class = "memefont" id = "cancel">
+											Cancel
+										</button>
+									</div>
+								</div>
+							</td>
+							<td class = "others" valign = "bottom" style = "width: 16.6%; background-image: url(cs1.6.png)"">
+								<button id = "ins1.6" class = "inbut">
+									<img style = "margin-left: -15px; margin-bottom: -1px;" src = dl.png alt = "Install">
+								</button>
+								<div id = "popupcontent" class = "popup">
+									<div class = "popup-content">
+										<h1 class = "memefont">
+											Install Counter-Strike: 1.6?
+										</h1>
+										<button class = "memefont" id = "confirm">
+											Yep!
+										</button>
+										<button class = "memefont" id = "cancel">
+											On second thought...
+										</button>
+									</div>
+								</div>		
+							</td>
+							<td class = "others" valign = "bottom" style = "width: 16.6%; background-image: url(l4d2.png)"">
+								<button id = "insl4d2" class = "inbut">
+									<img style = "margin-left: -15px; margin-bottom: -1px;" src = dl.png alt = "Install">
+								</button>
+								<div id = "popupcontent" class = "popup">
+									<div class = "popup-content">
+										<h1 class = "memefont">
+											Install Left 4 Dead 2?
+										</h1>
+										<button class = "memefont" id = "confirm">
+											Yep!
+										</button>
+										<button class = "memefont" id = "cancel">
+											On second thought...
+										</button>
+									</div>
+								</div>
+							</td>
+							<td class = "others" valign = "bottom" style = "width: 16.6%; background-image: url(hl1.png)"">
+								<button id = "nohl" class = "inbut">
+									<img style = "margin-left: -8px; margin-bottom: -1px;" src = no.png alt = "Install">
+								</button>
 							</td>
 						</tr>
 					</table>
 				</td>
 			</tr>
 		</table>
+		<script>
+			playbuttpen.addEventListener(
+				"click",
+				function () {
+					popupcontent.classList.add("show");
+				}
+			);
+			cancel.addEventListener(
+				"click",
+				function () {
+					popupcontent.classList.remove(
+						"show"
+					);
+				}
+			);
+			window.addEventListener(
+				"click",
+				function (event) {
+					if (event.target == myPopup) {
+						popupcontent.classList.remove(
+							"show"
+						);
+					}
+				}
+			);
+		</script>
 	</body>
 </html>
