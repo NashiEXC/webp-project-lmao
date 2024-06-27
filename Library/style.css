@@ -92,4 +92,12 @@ body {
 	margin-left: 100px;
 	margin-bottom: -21;
 }
+.others{
+	height: 150px;
+	width : 70px;
+	border-color: black;
+	background-image: url("penguin.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 	
