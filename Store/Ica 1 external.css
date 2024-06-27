@@ -7,32 +7,16 @@
                 margin: 0;
                 padding: 0;
                 overflow: hidden;
-                width: 
             }
             li {
                 font-weight: bolder;
                 font-size: xxx-large;
-                float: left;
-                
-            }
-            li a {
-                display: inline-block;
-                padding: 8px;
-                background-image: url("../images/rustygearblack.jpg");
-                color: white;
-                background-color: black;
-                background-repeat: no-repeat;
-            }
-            li b {
-                display: block;
-                float: right;
-                background-color: black;
-                color: white;
-                padding: 8px;
             }
             #table {
                 color: black;
                 border: none;
+                border-color: black;
+            
             }
         </style>
     </body>
