@@ -42,6 +42,7 @@ body {
 	font-size: 12;
 	margin-left: -1.416px;
 	margin-bottom: -1.122345567 ;
+	font-family: "Comic Sans Ms";
 }
 .memefont {
 	font-family: "Comic Sans Ms";
@@ -95,7 +96,6 @@ body {
 	height: 150px;
 	width : 70px;
 	border-color: black;
-	background-image: url("penguin.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
