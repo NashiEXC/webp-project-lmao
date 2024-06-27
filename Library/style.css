@@ -1,4 +1,4 @@
-head {
+.head {
 	background-image: linear-gradient(to right, #008080, blue);
 }
 body {
@@ -45,7 +45,6 @@ body {
 }
 .memefont {
 	font-family: "Comic Sans Ms";
-	text-align: left;
 }
 .gametable {
 	border-color: black;
@@ -100,4 +99,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-	
+.inbut {
+	border: 0px solid black;
+	background-color: transparent;
+}
