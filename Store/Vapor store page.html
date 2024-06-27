@@ -1,7 +1,38 @@
 <!doctype html>
 <html>
-    <head>
-    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        .navbar {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+        li a {
+                display: inline-block;
+                padding: 8px;
+                background-image: url("../images/rustygearblack.jpg");
+                color: white;
+                background-color: black;
+                background-repeat: no-repeat;
+            }
+        li b {
+                display: block;
+                background-color: black;
+                color: white;
+                padding: 8px; 
+             }
+        .menu {
+				width:fit-content;
+				float:left;
+				padding: 10px;
+				background-color: black;
+				color: white;
+				border-radius:15px;
+	            box-shadow: 5px 5px 20px #888888;
+             }
+    </style>
+<head>
+    <link rel="stylesheet" href="Ica 1 external.css">
         <title>Vapor:Store page</title>
         <meta name="viewport"
             content="width=device-width, initial-scale=1">
@@ -9,16 +40,85 @@
     <body>
         <table id="table"> 
             <tr>
-                <td>
-                    <navbar>
+                <th width="9px">
+                    <div class="navbar">
                         <li><a>Vapor</a></li>
-                    </navbar>
-                    <navbar>
+                    </div>
+                </th>   
+                <th>
+                    <div class="navbar">
                         <li><b>idk</a></li>
-                    </navbar>
-                </td>
+                    </div>
+                </th>
             </tr>
         </table>
-       
+    </body>
+    <body>
+        <table class="menu">
+            <tr>
+                <td>
+                    <div>
+                        <input type="text" placeholder="Search for game"
+                    style="background-color:darkgray;">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <input type="checkbox"
+                    style="background-color: darkgrey;">Action
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <input type="checkbox"
+                    style="background-color: darkgrey;">Adventure
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <input type="checkbox"
+                    style="background-color: darkgrey;">Fighting
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <input type="checkbox"
+                    style="background-color: darkgrey;">Multiplayer
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <input type="checkbox"
+                    style="background-color: darkgrey;">RPG
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <input type="checkbox"
+                    style="background-color: darkgrey;">Singleplayer
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <input type="checkbox"
+                    style="background-color: darkgrey;">Sandbox
+                    </div>
+                </td>
+            </tr>
+        </div>
     </body>
 </html>
