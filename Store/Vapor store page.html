@@ -7,24 +7,51 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
+        width: 
     }
     li {
+        font-weight: bolder;
+        font-size: xxx-large;
         float: left;
+        
     }
     li a {
-        display: block;
+        display: inline-block;
         padding: 8px;
-        background-image: url("../images/");
+        background-image: url("../images/rustygearblack.jpg");
+        color: white;
+        background-color: black;
+        background-repeat: no-repeat;
     }
-
+    li b {
+        display: block;
+        float: right;
+        background-color: black;
+        color: white;
+        padding: 8px;
+    }
+    #table {
+        color: black;
+        border: none;
+    }
 </style>
         <title>Vapor:Store page</title>
         <meta name="viewport"
             content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <navbar>
-                <li><a>logo</a></li>
-        </navbar>
+        <table id="table"> 
+            <tr>
+                <td>
+                    <navbar>
+                        <li><a>Vapor</a></li>
+                    </navbar>
+                    <navbar>
+                        <li><b>idk</a></li>
+                    </navbar>
+                </td>
+            </tr>
+        </table>
+       
     </body>
 </html>
