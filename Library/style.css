@@ -2,7 +2,7 @@
 	background-image: linear-gradient(to right, #008080, blue);
 }
 body {
-	background-image: linear-gradient(red, orange, yellow, green, cyan, blue, indigo, violet);
+	background-image: linear-gradient(rgb(17, 17, 17), grey);
 }
 .headtable {
 	border-color: black;

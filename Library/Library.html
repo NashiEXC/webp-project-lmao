@@ -109,23 +109,70 @@
 							</p>
 						</div>
 					</div>
+
 					<p class = "newsdesc">
 						dead game lol
 					</p>
 				</td>
 				<td class = "gamenews" valign = "bottom">
+					<button id = "news2" class = "inbut" style = "height: 100%; width: 100%; margin-bottom: -40;">
+					</button>
+					<div id = "news2content" class = "popup">
+						<div style = "background-image: url(chineseprick.jpg); background-repeat: no-repeat; background-size: cover ;"class = "popup-content-news">
+							<h3 class = "sans">
+								:(
+							</h3>
+							<p class = "sans">
+								we now shut down game because we no can scem u now
+								hungry no food 
+							<br/>
+							<br/>
+							<br/>
+								fuk yu,
+							<br/>
+								china studios
+							<br/>
+							<br/>
+							<br/>
+								Click Outside To Exit
+							</p>
+						</div>
+					</div>
 					<p class = "newsdesc">
 						man sets himself on fire
 					</p>
 				</td>
 				<td class = "gamenews" valign = "bottom">
+					<button id = "news3" class = "inbut" style = "height: 100%; width: 100%; margin-bottom: -40;">
+					</button>
+					<div id = "news3content" class = "popup">
+						<div style = "background-image: url(chineseprick.jpg); background-repeat: no-repeat; background-size: cover ;"class = "popup-content-news">
+							<h3 class = "sans">
+								:(
+							</h3>
+							<p class = "sans">
+								we now shut down game because we no can scem u now
+								hungry no food 
+							<br/>
+							<br/>
+							<br/>
+								fuk yu,
+							<br/>
+								china studios
+							<br/>
+							<br/>
+							<br/>
+								Click Outside To Exit
+							</p>
+						</div>
+					</div>
 					<p class = "newsdesc">
 						life is pain
 					</p>
 				</td>
 			</tr>
 		</table>
-		<p class = "sans">
+		<p class = "memefont">
 			Your Games
 		</p>
 		<table class = "gametable" border = "4" cellspacing = "0">
@@ -240,7 +287,45 @@
                         );
                     }
                 }
-            );			
+            );		
+			news2.addEventListener(
+                "click",
+                function () {
+                    news2content.classList.add(
+					"show"
+					);
+                }
+            );
+			
+            window.addEventListener(
+                "click",
+                function (event) {
+                    if (event.target == news2content) {
+                        news2content.classList.remove(
+                            "show"
+                        );
+                    }
+                }
+            );	
+			news3.addEventListener(
+                "click",
+                function () {
+                    news3content.classList.add(
+					"show"
+					);
+                }
+            );
+			
+            window.addEventListener(
+                "click",
+                function (event) {
+                    if (event.target == news3content) {
+                        news3content.classList.remove(
+                            "show"
+                        );
+                    }
+                }
+            );		
             playbuttpen.addEventListener(
                 "click",
                 function () {
