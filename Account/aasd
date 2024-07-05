@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .profile-info {
+            margin-top: 20px;
+        }
+        .box {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .box h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .box ul li {
+            margin-bottom: 10px;
+        }
+		.avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Game Store Profile</h1>
+        <div class="profile-info">
+		<img src="img_avatar.png" alt="Avatar" class="avatar">
+            Profile name</br>
+			date created
+
+
+        </div>
+
+        <div class="box">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Achievement 1 - Unlocked on 2023-01-15</li>
+                <li>Achievement 2 - Unlocked on 2023-03-20</li>
+                <li>Achievement 3 - Unlocked on 2023-05-12</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>Games Played</h2>
+            <ul>
+                <li>Game 1: 108 Hours</li>
+                <li>Game 2: 70 Hours</li>
+                <li>Game 3: 50 Hours</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>Friends</h2>
+            <ul>
+                <li>Friend 1: Online</li>
+                <li>Friend 2: Online</li>
+                <li>Friend 3: Offline</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
 
