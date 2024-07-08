@@ -80,7 +80,7 @@ a{
 
 .NavMenu{
     position: fixed;
-    left: -100%;
+    Right: -100%;
     top: 80px;
     gap: 0;
     flex-direction: column;
@@ -92,10 +92,10 @@ a{
 
 .navItem{
     margin: 30px 0;
-    margin-left: 50%;
+    margin-right: 50%;
 }
 
 .NavMenu.active{
-   left: -50%;
+   right: -50%;
 }
 
