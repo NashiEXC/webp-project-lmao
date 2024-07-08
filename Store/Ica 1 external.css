@@ -1,23 +1,16 @@
-<!doctype html>
-<html>
-    <body>
-        <style>
-            navbar {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-            }
-            li {
-                font-weight: bolder;
-                font-size: xxx-large;
-            }
-            #table {
-                color: black;
-                border: none;
-                border-color: black;
-            
-            }
-        </style>
-    </body>
-</html>
+
+navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    font-weight: bolder;
+    font-size: xxx-large;
+}
+#table {
+    color: black;
+    border: none;
+    border-color: black;            
+}
