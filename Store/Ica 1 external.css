@@ -14,7 +14,6 @@ li {
     margin: 2px;
  }
 .menu {
-    width: fit-content;
     float: left;
     padding-left: 20px;
     padding-right: 20px;
@@ -22,4 +21,14 @@ li {
     background-color: #272b2d;
     color: white;
     border-spacing: 5px;
+    height: 999cqi;
  }
+.table {
+    background-color: #272b2d;
+    color: white;
+    padding: 20px;
+    font-family: "Consolas", "Courier New", monospace;
+}
+.h {
+    margin:px;
+}
