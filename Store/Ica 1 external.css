@@ -8,3 +8,19 @@ li {
     border: none;
     border-color: black;            
 }
+.lib {
+    font-size: 20px ;
+    font-family: "Consolas", "Courier New", monospace;
+    gap:60px;
+ }
+.menu {
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: #272b2d;
+    color: white;
+    border-spacing: 5px;
+    gap: 60px;
+ }
