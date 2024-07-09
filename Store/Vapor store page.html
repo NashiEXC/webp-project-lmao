@@ -1,124 +1,65 @@
 <!doctype html>
 <html>
     <style>
-        .navbar {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-            }
-        li a {
-                display: inline-block;
-                padding: 8px;
-                background-image: url("../images/rustygearblack.jpg");
-                color: white;
-                background-color: black;
-                background-repeat: no-repeat;
-            }
-        li b {
-                display: block;
-                background-color: black;
-                color: white;
-                padding: 8px; 
-             }
-        .menu {
-				width:fit-content;
-				float:left;
-				padding: 10px;
-				background-color: black;
-				color: white;
-				border-radius:15px;
-	            box-shadow: 5px 5px 20px #888888;
-             }
     </style>
 <head>
     <link rel="stylesheet" href="Ica 1 external.css">
+    <link rel="stylesheet" href="Header.css">
         <title>Vapor:Store page</title>
         <meta name="viewport"
             content="width=device-width, initial-scale=1">
     </head>
-    <body>
-        <table id="table"> 
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="../images/Vapor.png" height="90" class="Logo">
+
+            <ul class="NavMenu">
+                <li class="navItem">
+                    <a href="../Landing/Landing.html" class="navLink">Home</a>
+                </li>
+                <li class="navItem">
+                    <a href="../Library/Library.html" class="navLink">Library</a>
+                </li>
+                <li class="navItem">
+                    <a href="../Account/account.html" class="navLink">Account</a>
+                </li>
+                <li class="navItem">
+                    <a href="#" class="navLink">Contact Us</a>
+                </li>
+                <li class="navItem">
+                    <a href="#" class="navLink">About Us</a>
+                </li>
+            </ul>
+            <div class="NavSideBar">
+                <span class="Bar"></span>
+                <span class="Bar"></span>
+                <span class="Bar"></span>
+            </div>
+        </nav>
+    </header>
+    <script src="Header.js"></script>
+        <ul class="menu">
+            <li ><input type="text" placeholder="Search for game"
+                style="background-color:darkgray; height: 20px;"></li>
+            <li class="lib"><input type="checkbox">&nbsp;Action</li>
+            <li class="lib"><input type="checkbox">&nbsp;Adventure</li>
+            <li class="lib"><input type="checkbox">&nbsp;Fighting</li>
+            <li class="lib"><input type="checkbox">&nbsp;Multiplayer</li>
+            <li class="lib"><input type="checkbox">&nbsp;RPG</li>
+            <li class="lib"><input type="checkbox">&nbsp;Singleplayer</li>
+            <li class="lib"><input type="checkbox">&nbsp;Sandbox</li>
+        </ul>
+        <table class="table">
             <tr>
-                <th width="9px">
-                    <div class="navbar">
-                        <li><a>Vapor</a></li>
-                    </div>
-                </th>   
                 <th>
-                    <div class="navbar">
-                        <li><b>idk</a></li>
-                    </div>
+                    asdasd
+                </th>
+                <th>
+                    sdfdfsdfs
                 </th>
             </tr>
         </table>
-    </body>
-    <body>
-        <table class="menu">
-            <tr>
-                <td>
-                    <div>
-                        <input type="text" placeholder="Search for game"
-                    style="background-color:darkgray;">
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div>
-                        <input type="checkbox"
-                    style="background-color: darkgrey;">Action
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div>
-                        <input type="checkbox"
-                    style="background-color: darkgrey;">Adventure
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div>
-                        <input type="checkbox"
-                    style="background-color: darkgrey;">Fighting
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div>
-                        <input type="checkbox"
-                    style="background-color: darkgrey;">Multiplayer
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div>
-                        <input type="checkbox"
-                    style="background-color: darkgrey;">RPG
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div>
-                        <input type="checkbox"
-                    style="background-color: darkgrey;">Singleplayer
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div>
-                        <input type="checkbox"
-                    style="background-color: darkgrey;">Sandbox
-                    </div>
-                </td>
-            </tr>
-        </div>
     </body>
 </html>
