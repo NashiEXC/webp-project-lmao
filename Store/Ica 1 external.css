@@ -1,7 +1,7 @@
 
 li {
     font-weight: bolder;
-    font-size: xxx-large;
+    font-size: xxx-large
 }
 #table {
     color: black;
@@ -11,7 +11,7 @@ li {
 .lib {
     font-size: 20px ;
     font-family: "Consolas", "Courier New", monospace;
-    gap:60px;
+    padding: 10px;
  }
 .menu {
     width: fit-content;
@@ -22,5 +22,4 @@ li {
     background-color: #272b2d;
     color: white;
     border-spacing: 5px;
-    gap: 60px;
  }
