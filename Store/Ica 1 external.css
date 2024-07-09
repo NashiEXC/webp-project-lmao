@@ -26,9 +26,9 @@ li {
 .table {
     background-color: #272b2d;
     color: white;
-    padding: 20px;
     font-family: "Consolas", "Courier New", monospace;
+    border-spacing: 25px;
 }
-.h {
-    margin:px;
+@media screen and {
+    
 }
