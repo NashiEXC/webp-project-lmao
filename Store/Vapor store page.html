@@ -1,34 +1,16 @@
 <!doctype html>
 <html>
     <style>
-        .navbar {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-            }
-        li a {
-                display: inline-block;
-                padding: 8px;
-                background-image: url("../images/rustygearblack.jpg");
-                color: white;
-                background-color: black;
-                background-repeat: no-repeat;
-            }
-        li b {
-                display: block;
-                background-color: black;
-                color: white;
-                padding: 8px; 
+        .lib {
+                font-size: 20px ;
              }
         .menu {
 				width:fit-content;
 				float:left;
 				padding: 10px;
-				background-color: black;
+				background-color: #272b2d;
 				color: white;
-				border-radius:15px;
-	            box-shadow: 5px 5px 20px #888888;
+                border-spacing: 5px;
              }
     </style>
 <head>
@@ -36,9 +18,46 @@
         <title>Vapor:Store page</title>
         <meta name="viewport"
             content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Header.css">
     </head>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="../images/Vapor.png" height="90" class="Logo">
 
-    <body>
+            <ul class="NavMenu">
+                <li class="navItem">
+                    <a href="../Landing/Landing.html" class="navLink">Home</a>
+                </li>
+                <li class="navItem">
+                    <a href="../Library/Library.html" class="navLink">Library</a>
+                </li>
+                <li class="navItem">
+                    <a href="../Account/account.html" class="navLink">Account</a>
+                </li>
+                <li class="navItem">
+                    <a href="#" class="navLink">Contact Us</a>
+                </li>
+                <li class="navItem">
+                    <a href="#" class="navLink">About Us</a>
+                </li>
+            </ul>
+            <div class="NavSideBar">
+                <span class="Bar"></span>
+                <span class="Bar"></span>
+                <span class="Bar"></span>
+            </div>
+        </nav>
+    </header>
+    <script src="Header.js"></script>
+        <ul class="menu">
+            <li ><input type="text" placeholder="Search for game"
+                style="background-color:darkgray;"></li>
+                <li class="lib"><input type="checkbox"
+                    style="background-color: darkgrey;">Action</li>
+        </ul>
+
         <table class="menu">
             <tr>
                 <td>
