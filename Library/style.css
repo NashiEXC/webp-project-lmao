@@ -1,8 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #272b2d
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.NavMenu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    text-wrap:nowrap;
+}
+
+.navLink{
+    transition: 0.5s ease-in-out;
+}
+
+.navLink:hover{
+    color:#04688d;
+}
+
+.NavSideBar{
+    display: none;
+    cursor: pointer;  
+}
+
+.Bar{
+    display: block;
+    width: 30px;
+    height:5px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.Logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.NavSideBar{
+    display:block;
+}
+
+.NavSideBar.active .Bar:nth-child(2){
+    opacity: 0;
+}
+
+ .NavSideBar.active .Bar:nth-child(1){
+    transform: translateY(10px) rotate(45deg);
+}
+
+.NavSideBar.active .Bar:nth-child(3){
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.NavMenu{
+    position: fixed;
+    Right: -100%;
+    top: 80px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #272b2d;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.navItem{
+    margin: 30px 0;
+    margin-right: 50%;
+    font-size: 2rem;
+    font-family: "Consolas", "Courier New", monospace;
+}
+
+.NavMenu.active{
+   right: -50%;
+}
 .head {
-	background-image: linear-gradient(to right, #008080, blue);
+	background-color: #272b2d;
 }
 body {
-	background-image: linear-gradient(red, orange, yellow, green, cyan, blue, indigo, violet);
+	background-color: #272b2d;
 }
 .headtable {
 	border-color: black;

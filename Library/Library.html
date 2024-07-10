@@ -4,13 +4,13 @@
 		<head>
 			<meta charset = "UTF-8"/>
 			<meta
-				http-equiv="X-UA-Compatible"
-				content="IE=edge"
+				http-equiv = "X-UA-Compatible"
+				content = "IE = edge"
 			/>
 			<meta
-				name="viewport"
-				content="width=device-width, 
-					   initial-scale=1.0"
+				name = "viewport"
+				content = "width = device-width, 
+					   initial-scale = 1.0"
 			/>
 				<link href = "style.css" rel = "stylesheet">
 			<style>
@@ -31,7 +31,7 @@
 					display: none;
 				}
 				.popup-content {
-					background-image: linear-gradient(to right, green, cyan);
+					background-color: #272b2d;
 					margin: 10% auto;
 					padding: 20px;
 					border: 1px solid #888888;
@@ -62,24 +62,36 @@
 		<link href = "style.css" rel = "stylesheet">
 	</head>
 	<body>
-		<h1>
-			<table class = "headtable" border = "4" cellspacing = "0">
-				<tr class = "head">
-					<th class = "headleft">
-						<h1 class = "memefont">
-							Vapor
-						</h1>
-					</th>
-					<th>
-						<form name = "menu" method = "get" action = "new.png">
-							<button class = "menubutt"  type = "submit">
-								<img src = "menu.png" width = "50"; height = "50" alt = "menu"/>
-							</button>
-						</form>
-					</th>
-				</tr>
-			</table>
-		</h1>
+			<header>
+				<nav class="navbar">
+					<img src="../images/Vapor.png" height="90" class="Logo">
+		
+					<ul class="NavMenu">
+						<li class="navItem">
+							<a href="../Landing/Landing.html" class="navLink">Home</a>
+						</li>
+						<li class="navItem">
+							<a href="../Library/Library.html" class="navLink">Library</a>
+						</li>
+						<li class="navItem">
+							<a href="../Account/account.html" class="navLink">Account</a>
+						</li>
+						<li class="navItem">
+							<a href="#" class="navLink">Contact Us</a>
+						</li>
+						<li class="navItem">
+							<a href="#" class="navLink">About Us</a>
+						</li>
+					</ul>
+					<div class="NavSideBar">
+						<span class="Bar"></span>
+						<span class="Bar"></span>
+						<spHeader&SidebarCode/Header.jsan class="Bar"></span>
+					</div>
+				</nav>
+			</header>
+			<script src="Header.js"></script>
+
 		<br/>
 		<br/>
 		<table class = "newstable" border = "4" cellspacing = "10">
@@ -109,58 +121,140 @@
 							</p>
 						</div>
 					</div>
+
 					<p class = "newsdesc">
 						dead game lol
 					</p>
 				</td>
 				<td class = "gamenews" valign = "bottom">
+					<button id = "news2" class = "inbut" style = "height: 100%; width: 100%; margin-bottom: -40;">
+					</button>
+					<div id = "news2content" class = "popup">
+						<div style = "background-image: url(chineseprick.jpg); background-repeat: no-repeat; background-size: cover ;"class = "popup-content-news">
+							<h3 class = "sans">
+								:(
+							</h3>
+							<p class = "sans">
+								we now shut down game because we no can scem u now
+								hungry no food 
+							<br/>
+							<br/>
+							<br/>
+								fuk yu,
+							<br/>
+								china studios
+							<br/>
+							<br/>
+							<br/>
+								Click Outside To Exit
+							</p>
+						</div>
+					</div>
 					<p class = "newsdesc">
 						man sets himself on fire
 					</p>
 				</td>
 				<td class = "gamenews" valign = "bottom">
+					<button id = "news3" class = "inbut" style = "height: 100%; width: 100%; margin-bottom: -40;">
+					</button>
+					<div id = "news3content" class = "popup">
+						<div style = "background-image: url(chineseprick.jpg); background-repeat: no-repeat; background-size: cover ;"class = "popup-content-news">
+							<h3 class = "sans">
+								:(
+							</h3>
+							<p class = "sans">
+								we now shut down game because we no can scem u now
+								hungry no food 
+							<br/>
+							<br/>
+							<br/>
+								fuk yu,
+							<br/>
+								china studios
+							<br/>
+							<br/>
+							<br/>
+								Click Outside To Exit
+							</p>
+						</div>
+					</div>
 					<p class = "newsdesc">
 						life is pain
 					</p>
 				</td>
 			</tr>
 		</table>
-		<p class = "sans">
+		<p class = "memefont">
 			Your Games
 		</p>
 		<table class = "gametable" border = "4" cellspacing = "0">
 			<tr style = "width: 100%;">
 				<td class = "bgimg" style = "width: 40%;">
-
-				</td>
-					<td>
-						<table style = "width: 900px; height: 235.5px; border-color: black; border-radius: 15px;" border = "1"  cellpadding = "0" cellspacing = "10">
-							<tr style = "width: 100%;">
-								<td class = "others" valign = "bottom" style = "width: 16%; background-image: url(penguin.png);"> 
-									<button id = "playbuttpen" style = "border: 0px solid black;background-color: transparent;">
-										<img style = "margin-left: -10px; margin-bottom: -1px;" src = play.png alt = "Install">
-									</button>
-									<div id = "popupcontent" class = "popup">
-										<div class = "popup-content">
-											<h1 style = "background-image: linear-gradient(blue, red);" class = "memefont">
-												Launching The Greatest Penguin Heist Of All Time... noot noot
-											</h1>
-											<button class = "memefont" id = "cancel">
-												Cancel
-											</button>
-										</div>
+					<table border ="1" cellpadding = "10" style = "position: relative; top: 102px">
+						<tr>
+							<td>
+								<button id = "playbutttp" style = "color: white; border: 0px solid black; background-color: transparent;">
+									Resume
+								</button>
+								<div id = "popupcontent69" class = "popup">
+									<div class = "popup-content">
+										<h1 style = "color: white; font-family: Consolas, Courier New, monospace;">
+											Launching Trepang²...
+										</h1>
+										<button style = "color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent;" id = "canceltp">
+											Cancel
+										</button>
 									</div>
-								</td>
-								<td class = "others" valign = "bottom" style = "width: 16%; background-image: url(pd3.png);"> 
-									<button id = "playpd3" style = "border: 0px solid black;background-color: transparent;">
-										<img style = "margin-left: -10px; margin-bottom: -1px;" src = play.png alt = "Install">
-									</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<button id = "uninstp" style = "color: white; border: 0px solid black; background-color: transparent;">
+									Uninstall
+								</button>
+								<div id = "popupcontent420" class = "popup">
+									<div class = "popup-content">
+										<h1 style = "color: white; font-family: Consolas, Courier New, monospace;">
+											Launching Trepang²...
+										</h1>
+										<button style = "color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent;" id = "canceluninstp">
+											Cancel
+										</button>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table style = "width: 900px; height: 235.5px; border-color: black; border-radius: 15px;" border = "1"  cellpadding = "0" cellspacing = "10">
+						<tr style = "width: 100%;">
+							<td class = "others" valign = "bottom" style = "width: 16%; background-image: url(penguin.png);"> 
+								<button id = "playbuttpen" style = "border: 0px solid black; background-color: transparent;">
+									<img style = "margin-left: -10px; margin-bottom: -1px;" src = play.png alt = "Install">
+								</button>
+								<div id = "popupcontent" class = "popup">
+									<div class = "popup-content">
+										<h1 style = "color: white; font-family: Consolas, Courier New, monospace;">
+											Launching The Greatest Penguin Heist Of All Time... noot noot
+										</h1>
+										<button style = "color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent;" id = "cancel">
+											Cancel
+										</button>
+									</div>
+								</div>
+							</td>
+							<td class = "others" valign = "bottom" style = "width: 16%; background-image: url(pd3.png);"> 
+								<button id = "playpd3" style = "border: 0px solid black;background-color: transparent;">
+									<img style = "margin-left: -10px; margin-bottom: -1px;" src = play.png alt = "Install">
+								</button>
 									<div id = "popupcontent2" class = "popup">
 										<div class = "popup-content">
-											<h1 style = "background-image: linear-gradient(blue, red);" class = "memefont">
+											<h1 style = "color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent;">
 												Launching Payday 3... Lets see those helmets fly!
 											</h1>
-											<button class = "memefont" id = "cancelpd3">
+											<button style = "color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent;" id = "cancelpd3">
 												Cancel
 											</button>
 										</div>
@@ -172,10 +266,10 @@
 									</button>
 									<div id = "popupcontent3" class = "popup">
 										<div class = "popup-content">
-											<h1 style = "background-image: linear-gradient(blue, red);" class = "memefont">
+											<h1 style = "color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent;">
 												Launching DOOM... RIP AND TEAR, UNTIL IT IS DONE.
 											</h1>
-											<button class = "memefont" id = "canceld">
+											<button style = "color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent;" id = "canceld">
 												Cancel
 											</button>
 										</div>
@@ -187,13 +281,13 @@
 									</button>
 									<div id = "popupcontent4" class = "popup">
 										<div class = "popup-content">
-											<h1 style = "width: 200px; background-image: linear-gradient(blue, red);" class = "memefont">
+											<h1 style = "width: 200px; color: white; font-family: Consolas, Courier New, monospace">
 												Install Counter-Strike 1.6?
 											</h1>
-											<button style = "width: 200px; height: 20px;" class = "memefont" id = "yescs">
+											<button style = "width: 200px; height: 20px; color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent" id = "yescs">
 												Alright, lets go.
 											</button>
-											<button style = "width: 200px; height: 20px;" class = "memefont" id = "cancelcs">
+											<button style = "width: 200px; height: 20px; color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent" id = "cancelcs">
 												On second thought...
 											</button>
 										</div>
@@ -205,13 +299,13 @@
 									</button>
 									<div id = "popupcontent5" class = "popup">
 										<div class = "popup-content">
-											<h1 style = "width: 200px; background-image: linear-gradient(blue, red);" class = "memefont">
+											<h1 style = "width: 200px; color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent" class = "memefont">
 												Install Payday 2?
 											</h1>
-											<button style = "width: 220px; height: 20px; margin-left: -12px;" class = "memefont" id = "yespd2">
+											<button style = "width: 220px; height: 20px; color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent" id = "yespd2">
 												Just get the damn thermal drill.
 											</button>
-											<button style = "width: 220px; height: 20px; margin-left: -12px;" class = "memefont" id = "cancelpd2">
+											<button style = "width: 220px; height: 20px; color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent" id = "cancelpd2">
 												On second thought...
 											</button>
 										</div>
@@ -240,7 +334,97 @@
                         );
                     }
                 }
-            );			
+            );		
+			news2.addEventListener(
+                "click",
+                function () {
+                    news2content.classList.add(
+					"show"
+					);
+                }
+            );
+			
+            window.addEventListener(
+                "click",
+                function (event) {
+                    if (event.target == news2content) {
+                        news2content.classList.remove(
+                            "show"
+                        );
+                    }
+                }
+            );	
+			news3.addEventListener(
+                "click",
+                function () {
+                    news3content.classList.add(
+					"show"
+					);
+                }
+            );
+			
+            window.addEventListener(
+                "click",
+                function (event) {
+                    if (event.target == news3content) {
+                        news3content.classList.remove(
+                            "show"
+                        );
+                    }
+                }
+            );	
+			uninstp.addEventListener(
+                "click",
+                function () {
+                    popupcontent420.classList.add(
+					"show"
+					);
+                }
+            );
+            canceluninstp.addEventListener(
+                "click",
+                function () {
+                    popupcontent420.classList.remove(
+                        "show"
+                    );
+                }
+            );
+            window.addEventListener(
+                "click",
+                function (event) {
+                    if (event.target == popupcontent420) {
+                        popupcontent420.classList.remove(
+                            "show"
+                        );
+                    }
+                }
+            );	
+			playbutttp.addEventListener(
+                "click",
+                function () {
+                    popupcontent69.classList.add(
+					"show"
+					);
+                }
+            );
+            canceltp.addEventListener(
+                "click",
+                function () {
+                    popupcontent69.classList.remove(
+                        "show"
+                    );
+                }
+            );
+            window.addEventListener(
+                "click",
+                function (event) {
+                    if (event.target == popupcontent69) {
+                        popupcontent69.classList.remove(
+                            "show"
+                        );
+                    }
+                }
+            );	
             playbuttpen.addEventListener(
                 "click",
                 function () {
