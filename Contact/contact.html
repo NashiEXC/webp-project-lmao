@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -39,6 +40,58 @@
         </nav>
     </header>
     <script src="Header.js"></script>
+    <!--FORM-->
+    <form name="ContactForm" class="Contact">
+        <table style="margin-top: 90px;" class="formcontent">
+            <tr>
+                <th colspan="2">
+                    Contact Us
+                </th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Required Fields are marked with an asterisk*
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Name*:<input type="text" name="namefield" class="namefield" placeholder="E.g. John Doe" required> 
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    E-mail*:<input type="email" name="mailfield" class="mailfield" placeholder="E.g. JohnDoe@Email.com" required> 
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Reason*:<select required name="reason" class="reason">
+                        <option value="Option1" class="Option1"> Option 1</option>
+                        <option value="Option2" class="Option2"> Option 2</option>
+                        <option value="Option3" class="Option3"> Option 3</option>
+                        <option value="Option4" class="Option4"> Option 4</option>
+                        <option value="Option5" class="Option5"> Option 5</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="textR">Reason:</td>
+                <td>
+                    <textarea placeholder="Please describe your issues/inquiries" cols="30" rows="10">
+                        
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="Buttons">
+                    <input type="submit" value="Submit"/>
+                    &nbsp;&nbsp;
+                    <input type="reset" value="Reset"/>
+                </td>
+            </tr>
+        </table>
+
+    </form>
     
 </body>
 </html>

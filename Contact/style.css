@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #29414d;
+    font-family: 'Consolas', Courier, monospace;
+    color: white;
+}
+
+
+
+th{
+    font-size: 5rem;
+}
+
+table{
+   margin-right: auto;
+   margin-left: auto;
+}
+
+td{
+    padding: 25px;
+}
