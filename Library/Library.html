@@ -4,13 +4,13 @@
 		<head>
 			<meta charset = "UTF-8"/>
 			<meta
-				http-equiv="X-UA-Compatible"
-				content="IE=edge"
+				http-equiv = "X-UA-Compatible"
+				content = "IE = edge"
 			/>
 			<meta
-				name="viewport"
-				content="width=device-width, 
-					   initial-scale=1.0"
+				name = "viewport"
+				content = "width = device-width, 
+					   initial-scale = 1.0"
 			/>
 				<link href = "style.css" rel = "stylesheet">
 			<style>
@@ -62,24 +62,36 @@
 		<link href = "style.css" rel = "stylesheet">
 	</head>
 	<body>
-		<h1>
-			<table class = "headtable" border = "4" cellspacing = "0">
-				<tr class = "head">
-					<th class = "headleft">
-						<h1 class = "memefont">
-							Vapor
-						</h1>
-					</th>
-					<th>
-						<form name = "menu" method = "get" action = "new.png">
-							<button class = "menubutt"  type = "submit">
-								<img src = "menu.png" width = "50"; height = "50" alt = "menu"/>
-							</button>
-						</form>
-					</th>
-				</tr>
-			</table>
-		</h1>
+			<header>
+				<nav class="navbar">
+					<img src="../images/Vapor.png" height="90" class="Logo">
+		
+					<ul class="NavMenu">
+						<li class="navItem">
+							<a href="../Landing/Landing.html" class="navLink">Home</a>
+						</li>
+						<li class="navItem">
+							<a href="../Library/Library.html" class="navLink">Library</a>
+						</li>
+						<li class="navItem">
+							<a href="../Account/account.html" class="navLink">Account</a>
+						</li>
+						<li class="navItem">
+							<a href="#" class="navLink">Contact Us</a>
+						</li>
+						<li class="navItem">
+							<a href="#" class="navLink">About Us</a>
+						</li>
+					</ul>
+					<div class="NavSideBar">
+						<span class="Bar"></span>
+						<span class="Bar"></span>
+						<spHeader&SidebarCode/Header.jsan class="Bar"></span>
+					</div>
+				</nav>
+			</header>
+			<script src="Header.js"></script>
+
 		<br/>
 		<br/>
 		<table class = "newstable" border = "4" cellspacing = "10">
@@ -109,23 +121,70 @@
 							</p>
 						</div>
 					</div>
+
 					<p class = "newsdesc">
 						dead game lol
 					</p>
 				</td>
 				<td class = "gamenews" valign = "bottom">
+					<button id = "news2" class = "inbut" style = "height: 100%; width: 100%; margin-bottom: -40;">
+					</button>
+					<div id = "news2content" class = "popup">
+						<div style = "background-image: url(chineseprick.jpg); background-repeat: no-repeat; background-size: cover ;"class = "popup-content-news">
+							<h3 class = "sans">
+								:(
+							</h3>
+							<p class = "sans">
+								we now shut down game because we no can scem u now
+								hungry no food 
+							<br/>
+							<br/>
+							<br/>
+								fuk yu,
+							<br/>
+								china studios
+							<br/>
+							<br/>
+							<br/>
+								Click Outside To Exit
+							</p>
+						</div>
+					</div>
 					<p class = "newsdesc">
 						man sets himself on fire
 					</p>
 				</td>
 				<td class = "gamenews" valign = "bottom">
+					<button id = "news3" class = "inbut" style = "height: 100%; width: 100%; margin-bottom: -40;">
+					</button>
+					<div id = "news3content" class = "popup">
+						<div style = "background-image: url(chineseprick.jpg); background-repeat: no-repeat; background-size: cover ;"class = "popup-content-news">
+							<h3 class = "sans">
+								:(
+							</h3>
+							<p class = "sans">
+								we now shut down game because we no can scem u now
+								hungry no food 
+							<br/>
+							<br/>
+							<br/>
+								fuk yu,
+							<br/>
+								china studios
+							<br/>
+							<br/>
+							<br/>
+								Click Outside To Exit
+							</p>
+						</div>
+					</div>
 					<p class = "newsdesc">
 						life is pain
 					</p>
 				</td>
 			</tr>
 		</table>
-		<p class = "sans">
+		<p class = "memefont">
 			Your Games
 		</p>
 		<table class = "gametable" border = "4" cellspacing = "0">
@@ -240,7 +299,45 @@
                         );
                     }
                 }
-            );			
+            );		
+			news2.addEventListener(
+                "click",
+                function () {
+                    news2content.classList.add(
+					"show"
+					);
+                }
+            );
+			
+            window.addEventListener(
+                "click",
+                function (event) {
+                    if (event.target == news2content) {
+                        news2content.classList.remove(
+                            "show"
+                        );
+                    }
+                }
+            );	
+			news3.addEventListener(
+                "click",
+                function () {
+                    news3content.classList.add(
+					"show"
+					);
+                }
+            );
+			
+            window.addEventListener(
+                "click",
+                function (event) {
+                    if (event.target == news3content) {
+                        news3content.classList.remove(
+                            "show"
+                        );
+                    }
+                }
+            );		
             playbuttpen.addEventListener(
                 "click",
                 function () {
