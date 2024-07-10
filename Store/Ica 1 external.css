@@ -56,10 +56,10 @@ li {
     flex: auto;
     flex-basis: 100%;
     border-spacing: 25px;
-    padding: 25px;
+    padding: 10px;
     background-color: #272b2d;
     font-family: "Consolas", "Courier New", monospace;
     color: white;
     text-align: center;
-    font-size: large;
+    font-size: larger;
 }
