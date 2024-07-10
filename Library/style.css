@@ -101,10 +101,10 @@ a{
    right: -50%;
 }
 .head {
-	background-image: linear-gradient(to right, #008080, blue);
+	background-color: #272b2d;
 }
 body {
-	background-image: linear-gradient(rgb(17, 17, 17), grey);
+	background-color: #272b2d;
 }
 .headtable {
 	border-color: black;
