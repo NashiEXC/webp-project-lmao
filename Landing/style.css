@@ -1,3 +1,14 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #272b2d;
+    font-family: 'Consolas', Courier, monospace;
+    color: white;
+}
 .WelcomeText{
    padding: 200px;
    margin: 0;
@@ -15,4 +26,37 @@
 }
 .subtext{
     color: white;
+}
+
+.blogs{
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+}
+
+.blogcontent{
+    width: 400px;
+    height: 300px;
+    padding-top: 60%;
+
+}
+
+.Main {
+    display: flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+    
+.BlogMain {
+    flex: 50%;
+    padding: 5px;
+}
+
+.blogsubtext{
+    text-overflow: ellipsis;
+    
+}
+
+.readmore{
+   text-align: end;
 }
