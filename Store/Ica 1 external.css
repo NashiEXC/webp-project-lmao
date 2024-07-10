@@ -23,6 +23,7 @@ li {
     color: white;
     border-spacing: 5px;
     height: 999cqi;
+    position: relative;
  }
 .table {
     background-color: #272b2d;
@@ -71,6 +72,7 @@ li {
     font-size: xxx-large;
     position: relative;
     padding: 10px;
+    
 }
 body {
     background-color: #272b2d;
@@ -79,15 +81,17 @@ body {
     padding: 5px;
 }
 textarea {
-    border: none;
     background-color: #272b2d;
     color:  white;
     font-family: "Consolas", "Courier New", monospace;
     padding: 10px;
     width: 800px;
     height: 400px;
-    overflow: hidden;
+    overflow: visable;
     resize: none;
+    scrollbar-color:  #272b2d grey;
+    border-radius: 5px;
+    border-color: grey;
 }
 #bb {
     font-family: "Consolas", "Courier New", monospace;
@@ -108,4 +112,10 @@ textarea {
 .button:hover {
     background-color: white;
     color: black;
+}
+#coat {
+    padding-top: 100px;
+}
+.Screenshots {
+    padding: 20px;
 }
