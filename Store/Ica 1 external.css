@@ -2,6 +2,7 @@
 li {
     font-weight: bolder;
     font-size: xxx-large
+    font-family: "Consolas", "Courier New", monospace;
 }
 #table {
     color: black;
@@ -39,18 +40,18 @@ li {
     justify-content: space-between;
     height: 500px;
     width: 500px;
+    position: relative;
+    bottom: 100px;
+
 }
 .table2 {
-    background-color: #272b2d;
-    background-image: url(/Store/Pictures/Seikiro.png);
     color: white;
     font-family: "Consolas", "Courier New", monospace;
-    height: 432px;
-    width: 1980px;
-    background-position: -100px -100px;
+    border-collapse: collapse;
 }
 .row {
     display: flex;
+    overflow: hidden;
 }
 .column {
     flex: auto;
@@ -61,5 +62,41 @@ li {
     font-family: "Consolas", "Courier New", monospace;
     color: white;
     text-align: center;
+    font-size: larger;
+}
+.tt {
+    background-color: #272b2d;
+    font-family: "Consolas", "Courier New", monospace;
+    color: white;
+    font-size: xxx-large;
+    position: relative;
+    padding: 10px;
+}
+body {
+    background-color: #272b2d;
+}
+.gcover {
+    padding: 5px;
+}
+textarea {
+    border: none;
+    background-color: #272b2d;
+    color:  white;
+    font-family: "Consolas", "Courier New", monospace;
+    padding: 10px;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    resize: none;
+}
+#bb {
+    font-family: "Consolas", "Courier New", monospace;
+    background-color: #228B22	;
+    width: 280px;
+    height: 30px;
+    position: relative;
+    display: block;
+    margin: auto;
+    font-weight: 1000;
     font-size: larger;
 }
