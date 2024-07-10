@@ -190,42 +190,65 @@
 		<table class = "gametable" border = "4" cellspacing = "0">
 			<tr style = "width: 100%;">
 				<td class = "bgimg" style = "width: 40%;">
-					<button id = "playbutttp" style = "color: white; border: 0px solid black; background-color: transparent; position: absolute; top: -20px">
-						kill me now
-					</button>
-					<div id = "popupcontent69" class = "popup">
-						<div class = "popup-content">
-							<h1 style = "color: white; font-family: Consolas, Courier New, monospace;">
-								Launching Trepang²...
-							</h1>
-							<button style = "color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent;" id = "canceltp">
-								Cancel
-							</button>
-						</div>
-					</div>
-				</td>
-					<td>
-						<table style = "width: 900px; height: 235.5px; border-color: black; border-radius: 15px;" border = "1"  cellpadding = "0" cellspacing = "10">
-							<tr style = "width: 100%;">
-								<td class = "others" valign = "bottom" style = "width: 16%; background-image: url(penguin.png);"> 
-									<button id = "playbuttpen" style = "border: 0px solid black; background-color: transparent;">
-										<img style = "margin-left: -10px; margin-bottom: -1px;" src = play.png alt = "Install">
-									</button>
-									<div id = "popupcontent" class = "popup">
-										<div class = "popup-content">
-											<h1 style = "color: white; font-family: Consolas, Courier New, monospace;">
-												Launching The Greatest Penguin Heist Of All Time... noot noot
-											</h1>
-											<button style = "color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent;" id = "cancel">
-												Cancel
-											</button>
-										</div>
+					<table border ="1" cellpadding = "10" style = "position: relative; top: 102px">
+						<tr>
+							<td>
+								<button id = "playbutttp" style = "color: white; border: 0px solid black; background-color: transparent;">
+									Resume
+								</button>
+								<div id = "popupcontent69" class = "popup">
+									<div class = "popup-content">
+										<h1 style = "color: white; font-family: Consolas, Courier New, monospace;">
+											Launching Trepang²...
+										</h1>
+										<button style = "color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent;" id = "canceltp">
+											Cancel
+										</button>
 									</div>
-								</td>
-								<td class = "others" valign = "bottom" style = "width: 16%; background-image: url(pd3.png);"> 
-									<button id = "playpd3" style = "border: 0px solid black;background-color: transparent;">
-										<img style = "margin-left: -10px; margin-bottom: -1px;" src = play.png alt = "Install">
-									</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<button id = "uninstp" style = "color: white; border: 0px solid black; background-color: transparent;">
+									Uninstall
+								</button>
+								<div id = "popupcontent420" class = "popup">
+									<div class = "popup-content">
+										<h1 style = "color: white; font-family: Consolas, Courier New, monospace;">
+											Launching Trepang²...
+										</h1>
+										<button style = "color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent;" id = "canceluninstp">
+											Cancel
+										</button>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table style = "width: 900px; height: 235.5px; border-color: black; border-radius: 15px;" border = "1"  cellpadding = "0" cellspacing = "10">
+						<tr style = "width: 100%;">
+							<td class = "others" valign = "bottom" style = "width: 16%; background-image: url(penguin.png);"> 
+								<button id = "playbuttpen" style = "border: 0px solid black; background-color: transparent;">
+									<img style = "margin-left: -10px; margin-bottom: -1px;" src = play.png alt = "Install">
+								</button>
+								<div id = "popupcontent" class = "popup">
+									<div class = "popup-content">
+										<h1 style = "color: white; font-family: Consolas, Courier New, monospace;">
+											Launching The Greatest Penguin Heist Of All Time... noot noot
+										</h1>
+										<button style = "color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent;" id = "cancel">
+											Cancel
+										</button>
+									</div>
+								</div>
+							</td>
+							<td class = "others" valign = "bottom" style = "width: 16%; background-image: url(pd3.png);"> 
+								<button id = "playpd3" style = "border: 0px solid black;background-color: transparent;">
+									<img style = "margin-left: -10px; margin-bottom: -1px;" src = play.png alt = "Install">
+								</button>
 									<div id = "popupcontent2" class = "popup">
 										<div class = "popup-content">
 											<h1 style = "color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent;">
@@ -345,6 +368,32 @@
                 function (event) {
                     if (event.target == news3content) {
                         news3content.classList.remove(
+                            "show"
+                        );
+                    }
+                }
+            );	
+			uninstp.addEventListener(
+                "click",
+                function () {
+                    popupcontent420.classList.add(
+					"show"
+					);
+                }
+            );
+            canceluninstp.addEventListener(
+                "click",
+                function () {
+                    popupcontent420.classList.remove(
+                        "show"
+                    );
+                }
+            );
+            window.addEventListener(
+                "click",
+                function (event) {
+                    if (event.target == popupcontent420) {
+                        popupcontent420.classList.remove(
                             "show"
                         );
                     }
