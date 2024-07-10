@@ -1,0 +1,18 @@
+.WelcomeText{
+   padding: 200px;
+   margin: 0;
+   width: 100%;
+   background-position: 75%;
+   background-size: fill;
+   background-repeat: no-repeat;
+   font-family: "Consolas", "Courier New", monospace;
+}
+
+.maintext{
+    color: white;
+    font-size: 100px;
+    font-weight: bolder;
+}
+.subtext{
+    color: white;
+}
