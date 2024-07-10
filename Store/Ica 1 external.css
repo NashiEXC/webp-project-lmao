@@ -26,8 +26,7 @@ li {
 .table {
     background-color: #272b2d;
     color: white;
-    font-family: "Consolas", "Courier New", monospace;
-    border-spacing: 25px;
+    font-family: "Consolas", "Courier New", monospace;   
 }
 .game {
     justify-content: space-between;
@@ -52,4 +51,18 @@ li {
     height: 432px;
     width: 1980px;
     background-position: -100px -100px;
+}
+.row {
+    display: flex;
+}
+.column {
+    flex: auto;
+    flex-basis: 100%;
+    border-spacing: 25px;
+    padding: 25px;
+    background-color: #272b2d;
+    font-family: "Consolas", "Courier New", monospace;
+    color: white;
+    text-align: center;
+    font-size: larger;
 }
