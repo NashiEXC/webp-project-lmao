@@ -12,19 +12,3 @@
   {
     font-weight: var(--font-bold);
   }
-  <table class="table">
-  <tr>
-      <th>
-          <a href="gamepage.html"></a>
-          <div><img src="/Store/Pictures/rust.png"class="game">Rust</div>
-          <div><img src="/Store/Pictures/DRG.png" class="game">Deep rock galactic</div>
-          <img src="/Store/Pictures/Seikiro.png" class="game">Seikiro
-
-      </th>
-  </tr>
-  <tr>
-      <th height="999">
-          &nbsp;
-      </th>
-  </tr>
-</table>
