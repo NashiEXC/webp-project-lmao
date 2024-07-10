@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #272b2d;
+    background-color: #29414d;
     font-family: 'Consolas', Courier, monospace;
     color: white;
 }
@@ -57,6 +57,30 @@ body{
     
 }
 
-.readmore{
+.readmorepos{
    text-align: end;
+}
+
+.readmore{
+    transition: 0.5s ease-in-out;
+}
+.readmore:hover{
+    color:#04688d;
+}
+
+#BlogHead{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.readolderpos{
+    font-size: 2rem;
+    text-align: end;
+}
+
+.readolder{
+    transition: 0.5s ease-in-out;
+}
+.readolder:hover{
+    color:#04688d;
 }
