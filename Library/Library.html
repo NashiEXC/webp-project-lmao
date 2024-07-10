@@ -190,12 +190,25 @@
 		<table class = "gametable" border = "4" cellspacing = "0">
 			<tr style = "width: 100%;">
 				<td class = "bgimg" style = "width: 40%;">
+					<button id = "playbutttp" style = "color: white; border: 0px solid black; background-color: transparent; position: absolute; top: -20px">
+						kill me now
+					</button>
+					<div id = "popupcontent69" class = "popup">
+						<div class = "popup-content">
+							<h1 style = "color: white; font-family: Consolas, Courier New, monospace;">
+								Launching Trepang²...
+							</h1>
+							<button style = "color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent;" id = "canceltp">
+								Cancel
+							</button>
+						</div>
+					</div>
 				</td>
 					<td>
 						<table style = "width: 900px; height: 235.5px; border-color: black; border-radius: 15px;" border = "1"  cellpadding = "0" cellspacing = "10">
 							<tr style = "width: 100%;">
 								<td class = "others" valign = "bottom" style = "width: 16%; background-image: url(penguin.png);"> 
-									<button id = "playbuttpen" style = "border: 0px solid black;background-color: transparent;">
+									<button id = "playbuttpen" style = "border: 0px solid black; background-color: transparent;">
 										<img style = "margin-left: -10px; margin-bottom: -1px;" src = play.png alt = "Install">
 									</button>
 									<div id = "popupcontent" class = "popup">
@@ -336,7 +349,33 @@
                         );
                     }
                 }
-            );		
+            );	
+			playbutttp.addEventListener(
+                "click",
+                function () {
+                    popupcontent69.classList.add(
+					"show"
+					);
+                }
+            );
+            canceltp.addEventListener(
+                "click",
+                function () {
+                    popupcontent69.classList.remove(
+                        "show"
+                    );
+                }
+            );
+            window.addEventListener(
+                "click",
+                function (event) {
+                    if (event.target == popupcontent69) {
+                        popupcontent69.classList.remove(
+                            "show"
+                        );
+                    }
+                }
+            );	
             playbuttpen.addEventListener(
                 "click",
                 function () {
