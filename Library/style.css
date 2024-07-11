@@ -211,3 +211,7 @@ body {
 	font-family: "Comic Sans Ms";
 	color: black;
 }
+.unifont {
+	font-family: "Consolas", "Courier New", monospace;
+	color: white;
+}
