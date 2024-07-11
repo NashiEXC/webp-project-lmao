@@ -1,0 +1,132 @@
+li {
+    font-weight: bolder;
+    font-size: xxx-large;
+    font-family: "Consolas", "Courier New", monospace;
+}
+#table {
+    color: black;
+    border: none;
+    border-color: black;            
+}
+.lib {
+    font-size: 20px ;
+    font-family: "Consolas", "Courier New", monospace;
+    margin: 2px;
+    cursor: pointer;
+ }
+.menu {
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: #272b2d;
+    color: white;
+    border-spacing: 5px;
+    height: 999cqi;
+    position: relative;
+ }
+.table {
+    background-color: #272b2d;
+    color: white;
+    font-family: "Consolas", "Courier New", monospace;   
+}
+.game {
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    Height: 100%;
+}
+.banner {
+    box-sizing: border-box;
+    justify-content: space-between;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    bottom: 100px;
+
+}
+.table2 {
+    color: white;
+    font-family: "Consolas", "Courier New", monospace;
+    border-collapse: collapse;
+}
+.row {
+    display: flex;
+    overflow: hidden;
+}
+.column {
+    flex: auto;
+    flex-basis: 100%;
+    border-spacing: 25px;
+    padding: 10px;
+    background-color: #272b2d;
+    font-family: "Consolas", "Courier New", monospace;
+    color: white;
+    text-align: center;
+    font-size: larger;
+}
+.tt {
+    background-color: #272b2d;
+    font-family: "Consolas", "Courier New", monospace;
+    color: white;
+    font-size: xxx-large;
+    position: relative;
+    padding: 10px;
+    
+}
+body {
+    background-color: #272b2d;
+}
+.gcover {
+    padding: 5px;
+}
+textarea {
+    background-color: #272b2d;
+    color:  white;
+    font-family: "Consolas", "Courier New", monospace;
+    padding: 10px;
+    width: 800px;
+    height: 400px;
+    overflow: visable;
+    resize: none;
+    scrollbar-color:  #272b2d grey;
+    border-radius: 5px;
+    border-color: grey;
+}
+#bb {
+    font-family: "Consolas", "Courier New", monospace;
+    width: 280px;
+    height: 30px;
+    position: relative;
+    display: block;
+    margin: auto;
+    font-weight: 1000;
+    font-size: larger;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.button {
+    background-color: #228B22;
+    color: black;
+}
+.button:hover {
+    background-color: white;
+    color: black;
+}
+#coat {
+    padding-top: 100px;
+}
+.Screenshots {
+    padding: 20px;
+}
+
+.gametext{
+    transition: 0.5s ease-in-out;
+
+
+    
+}
+
+.gametext:hover{
+    color:#04688d;
+}
