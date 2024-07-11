@@ -119,3 +119,14 @@ textarea {
 .Screenshots {
     padding: 20px;
 }
+
+.gametext{
+    transition: 0.5s ease-in-out;
+
+
+    
+}
+
+.gametext:hover{
+    color:#04688d;
+}
