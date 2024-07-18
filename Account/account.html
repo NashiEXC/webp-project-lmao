@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Header.css">
-	<title>Game Store Profile</title>
+    <title>Game Store Profile</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -49,10 +49,16 @@
         .box ul {
             list-style-type: none;
             padding: 0;
+            display: flex;
+            flex-wrap: wrap;
         }
         .box ul li {
-            margin-bottom: 10px;
-        }
+		margin-right: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: #000000;
+		}
         .avatar {
             vertical-align: middle;
             width: 100px;
@@ -64,7 +70,7 @@
 <body>
     <header>
         <nav class="navbar">
-            <img src="../images/Vapor.png" height="90" class="Logo">
+            <img src="Vapor.png" height="90" class="Logo">
 
             <ul class="NavMenu">
                 <li class="navItem">
@@ -98,35 +104,41 @@
         <div class="info-text">
             <p>Profile name</p>
             <p>Bio</p>
-			<p>date created</p>
+            <p>date created</p>
         </div>
     </div>
 
     <div class="box">
-        <h2>Achievements</h2>
-        <ul>
-            <li>Achievement 1 - Unlocked on 2023-01-15</li>
-            <li>Achievement 2 - Unlocked on 2023-03-20</li>
-            <li>Achievement 3 - Unlocked on 2023-05-12</li>
-        </ul>
+        <a href="Achievements.html">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Achievement 1 - Unlocked on 2023-01-15</li>
+                <li>Achievement 2 - Unlocked on 2023-03-20</li>
+                <li>Achievement 3 - Unlocked on 2023-05-12</li>
+            </ul>
+        </a>
     </div>
 
     <div class="box">
+    <a href="GamesPlayed.html">
         <h2>Games Played</h2>
         <ul>
-            <li><img src="EldenRing.jpg" alt="EldenRing.jpg">Elden Ring: 108 Hours</li>
-            <li><img src="RedDeadRedemption.jpg" alt="RedDeadRedemption.jpg">Game 2: 70 Hours</li>
-            <li><img src="DeepRockGalactic.jpg" alt="DeepRockGalactic.jpg">Game 3: 50 Hours</li>
+            <li><img src="EldenRing.jpg" alt="EldenRing.jpg" height="200" width="200"><br>Elden Ring: 108 Hours</li>
+            <li><img src="RedDeadRedemption.jpg" alt="RedDeadRedemption.jpg" height="200" width="200"><br>Red Dead Redemption 2: 70 Hours</li>
+            <li><img src="DeepRockGalactic.jpg" alt="DeepRockGalactic.jpg" height="200" width="200"><br>Deep Rock Galactic: 50 Hours</li>
         </ul>
-    </div>
+    </a>
+</div>
 
     <div class="box">
-        <h2>Friends</h2>
-        <ul>
-            <li>Friend 1: Online</li>
-            <li>Friend 2: Online</li>
-            <li>Friend 3: Offline</li>
-        </ul>
+        <a href="Friends.html">
+            <h2>Friends</h2>
+            <ul>
+                <li>Friend 1: Online</li>
+                <li>Friend 2: Online</li>
+                <li>Friend 3: Offline</li>
+            </ul>
+        </a>
     </div>
 </div>
 
