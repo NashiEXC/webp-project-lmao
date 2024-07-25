@@ -121,4 +121,14 @@ textarea {
 }
 .border {
     border: 1px solid white;
+
+.gametext{
+    transition: 0.5s ease-in-out;
+
+
+    
+}
+
+.gametext:hover{
+    color:#04688d;
 }
