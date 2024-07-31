@@ -9,18 +9,20 @@
         body {
             font-family: Arial, sans-serif;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #29414d;
+            color: #fff; /* White text color for body */
         }
         .container {
-            background-color: #fff;
+            background-color: #29414d;
             padding: 20px;
-            border: 1px solid #ddd;
+            border: 1px solid #000; /* Black border */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             padding-top: 100px;
         }
         h1 {
             text-align: center;
+            color: #fff; /* White text color for header */
         }
         .profile-info {
             margin-top: 20px;
@@ -33,18 +35,21 @@
         }
         .profile-info .info-text {
             flex-grow: 1;
+            color: #fff; /* White text color for profile info */
         }
         .box {
-            background-color: #f9f9f9;
+            background-color: #29414d;
             padding: 15px;
             margin-bottom: 20px;
-            border: 1px solid #ddd;
+            border: 1px solid #000; /* Black border */
             border-radius: 8px;
         }
         .box h2 {
             margin-top: 0;
             font-size: 1.5rem;
-            color: #333;
+            color: #fff; /* White text color for box headers */
+            display: flex;
+            align-items: center;
         }
         .box ul {
             list-style-type: none;
@@ -53,17 +58,27 @@
             flex-wrap: wrap;
         }
         .box ul li {
-		margin-right: 15px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		color: #000000;
-		}
+            margin-right: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fff; /* White text color for list items */
+        }
+        .box ul li img {
+            margin-right: 10px;
+        }
         .avatar {
             vertical-align: middle;
             width: 100px;
             height: 100px;
             border-radius: 50%;
+        }
+        a {
+            color: #fff; /* White text color for links */
+            text-decoration: none; /* Remove underline from links */
+        }
+        a:hover {
+            text-decoration: underline; /* Underline on hover */
         }
     </style>
 </head>
@@ -73,21 +88,11 @@
             <img src="Vapor.png" height="90" class="Logo">
 
             <ul class="NavMenu">
-                <li class="navItem">
-                    <a href="../Landing/Landing.html" class="navLink">Home</a>
-                </li>
-                <li class="navItem">
-                    <a href="../Library/Library.html" class="navLink">Library</a>
-                </li>
-                <li class="navItem">
-                    <a href="../Account/account.html" class="navLink">Account</a>
-                </li>
-                <li class="navItem">
-                    <a href="#" class="navLink">Contact Us</a>
-                </li>
-                <li class="navItem">
-                    <a href="#" class="navLink">About Us</a>
-                </li>
+                <li class="navItem"><a href="../Landing/Landing.html" class="navLink">Home</a></li>
+                <li class="navItem"><a href="../Library/Library.html" class="navLink">Library</a></li>
+                <li class="navItem"><a href="../Account/account.html" class="navLink">Account</a></li>
+                <li class="navItem"><a href="#" class="navLink">Contact Us</a></li>
+                <li class="navItem"><a href="#" class="navLink">About Us</a></li>
             </ul>
             <div class="NavSideBar">
                 <span class="Bar"></span>
@@ -96,51 +101,51 @@
             </div>
         </nav>
     </header>
-<script src="header.js"></script>
-<div class="container">
-    <h1>Game Store Profile</h1>
-    <div class="profile-info">
-        <img src="img_avatar.png" alt="Avatar" class="avatar">
-        <div class="info-text">
-            <p>Profile name</p>
-            <p>Bio</p>
-            <p>date created</p>
+    <script src="header.js"></script>
+    <div class="container">
+        <h1>Game Store Profile</h1>
+        <div class="profile-info">
+            <img src="img_avatar.png" alt="Avatar" class="avatar">
+            <div class="info-text">
+                <p>Profile name</p>
+                <p>Bio</p>
+                <p>date created</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="Achievements.html">
+                <h2>Achievements</h2>
+                <ul>
+                    <li>Achievement 1 - Unlocked on 2023-01-15</li>
+                    <li>Achievement 2 - Unlocked on 2023-03-20</li>
+                    <li>Achievement 3 - Unlocked on 2023-05-12</li>
+                </ul>
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="GamesPlayed.html">
+                <h2>Games Played</h2>
+                <ul>
+                    <li><img src="EldenRing.jpg" alt="EldenRing.jpg" height="200" width="200"><br>Elden Ring: 108 Hours</li>
+                    <li><img src="RedDeadRedemption.jpg" alt="RedDeadRedemption.jpg" height="200" width="200"><br>Red Dead Redemption 2: 70 Hours</li>
+                    <li><img src="DeepRockGalactic.jpg" alt="DeepRockGalactic.jpg" height="200" width="200"><br>Deep Rock Galactic: 50 Hours</li>
+                </ul>
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="Friends.html">
+                <h2>Friends</h2>
+                <ul>
+                    <li>Friend 1: Online</li>
+                    <li>Friend 2: Online</li>
+                    <li>Friend 3: Offline</li>
+                </ul>
+            </a>
         </div>
     </div>
-
-    <div class="box">
-        <a href="Achievements.html">
-            <h2>Achievements</h2>
-            <ul>
-                <li>Achievement 1 - Unlocked on 2023-01-15</li>
-                <li>Achievement 2 - Unlocked on 2023-03-20</li>
-                <li>Achievement 3 - Unlocked on 2023-05-12</li>
-            </ul>
-        </a>
-    </div>
-
-    <div class="box">
-    <a href="GamesPlayed.html">
-        <h2>Games Played</h2>
-        <ul>
-            <li><img src="EldenRing.jpg" alt="EldenRing.jpg" height="200" width="200"><br>Elden Ring: 108 Hours</li>
-            <li><img src="RedDeadRedemption.jpg" alt="RedDeadRedemption.jpg" height="200" width="200"><br>Red Dead Redemption 2: 70 Hours</li>
-            <li><img src="DeepRockGalactic.jpg" alt="DeepRockGalactic.jpg" height="200" width="200"><br>Deep Rock Galactic: 50 Hours</li>
-        </ul>
-    </a>
-</div>
-
-    <div class="box">
-        <a href="Friends.html">
-            <h2>Friends</h2>
-            <ul>
-                <li>Friend 1: Online</li>
-                <li>Friend 2: Online</li>
-                <li>Friend 3: Offline</li>
-            </ul>
-        </a>
-    </div>
-</div>
-
 </body>
 </html>
+
