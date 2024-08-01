@@ -16,14 +16,14 @@
       <script>
 
         var myGamePiece;
-        var myObstacle;
         var myBackground;
+        var myObstacle;
           function startGame() {
             myObstacle = new component(30, 200, "grey", 300, 120);
             myObstacle2 = new component(30, 200, "grey", 340, 140);
             myGamePiece = new component(140, 100, "plane.png", 10, 120, "image");
             myBackground = new component(656, 270, "sky.jpg", 0, 0, "image");
-            explosion = new component (100, 200, "explosion.gif", 280, 50, "image");
+            explosion = new component(100, 200, "explosion.gif", 280, 50, "image");
             myGameArea.start();
             }
 
@@ -46,7 +46,7 @@
             this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
           },
           stop : function() {
-            clearInterval(this,interval);
+            clearInterval(this.interval);
           }
         }
 
@@ -108,17 +108,16 @@
             }
             else {
             myGameArea.clear();
+            myBackground.newPos();
+            myBackground.update();
             myObstacle.update();
             myObstacle2.update();
-            
             myGamePiece.speedX = 0;
             myGamePiece.speedY = 0;
             if (myGameArea.key && myGameArea.key == 65) {myGamePiece.speedX = -1.5; }
             if (myGameArea.key && myGameArea.key == 68) {myGamePiece.speedX = 1.5; }
             if (myGameArea.key && myGameArea.key == 87) {myGamePiece.speedY = -1.5; }
             if (myGameArea.key && myGameArea.key == 83) {myGamePiece.speedY = 1.5; }
-            myBackground.newPos();
-            myBackground.update();
             myGamePiece.newPos();
             myGamePiece.update();
           }
