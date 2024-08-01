@@ -1,0 +1,45 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    font-family: "Consolas", "Courier New", monospace;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 500px;
+}
+.coat {
+    padding-top: 100px;
+    align-items: center;
+    background-color: #29414d;
+}
+.cart {
+
+}
+textarea {
+    overflow: hidden;
+    resize: none;
+    background-color: #29414d;
+    border-radius: 5px;
+    font-family: "Consolas", "Courier New", monospace;
+    width: 170px;
+    text-align: center;
+    border-color: black;
+    display: inline-block;
+    vertical-align: top;
+}
+select {
+    width: 170px;
+    background-color: #29414d;
+    border-color: black;
+    font-family: "Consolas", "Courier New", monospace;
+    border-radius: 5px;
+}
+.BB {
+    background-color: #228B22;
+    width: 170px;
+}
+.GI {
+    max-width: 40%;
+    min-height: 30%;
+}

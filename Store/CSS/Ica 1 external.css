@@ -19,14 +19,14 @@ li {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    background-color: #272b2d;
+    background-color: #29414d;
     color: white;
     border-spacing: 5px;
     height: 999cqi;
     position: relative;
  }
 .table {
-    background-color: #272b2d;
+    background-color: #1f313a;
     color: white;
     font-family: "Consolas", "Courier New", monospace;   
 }
@@ -59,14 +59,14 @@ li {
     flex-basis: 100%;
     border-spacing: 25px;
     padding: 10px;
-    background-color: #272b2d;
+    background-color: #1f313a;
     font-family: "Consolas", "Courier New", monospace;
     color: white;
     text-align: center;
     font-size: larger;
 }
 .tt {
-    background-color: #272b2d;
+    background-color: #29414d;
     font-family: "Consolas", "Courier New", monospace;
     color: white;
     font-size: xxx-large;
@@ -75,13 +75,13 @@ li {
     
 }
 body {
-    background-color: #272b2d;
+    background-color: #29414d;
 }
 .gcover {
     padding: 5px;
 }
 textarea {
-    background-color: #272b2d;
+    background-color: #1f313a;
     color:  white;
     font-family: "Consolas", "Courier New", monospace;
     padding: 10px;
@@ -89,7 +89,7 @@ textarea {
     height: 400px;
     overflow: visable;
     resize: none;
-    scrollbar-color:  #272b2d grey;
+    scrollbar-color:  #29414d grey;
     border-radius: 5px;
     border-color: grey;
 }
@@ -114,19 +114,18 @@ textarea {
     color: black;
 }
 #coat {
-    padding-top: 100px;
+    padding-top: 90px;
 }
 .Screenshots {
     padding: 20px;
 }
-
-.gametext{
+.border {
+    border: 1px solid white;
+}
+.gametext {
     transition: 0.5s ease-in-out;
-
-
-    
 }
 
-.gametext:hover{
+.gametext:hover {
     color:#04688d;
 }
