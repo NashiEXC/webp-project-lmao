@@ -18,12 +18,15 @@
         var myGamePiece;
         var myBackground;
         var myObstacle;
+        var mySound;
+
           function startGame() {
             myObstacle = new component(30, 200, "grey", 300, 120);
             myObstacle2 = new component(30, 200, "grey", 340, 140);
-            myGamePiece = new component(140, 100, "plane.png", 10, 120, "image");
-            myBackground = new component(656, 270, "sky.jpg", 0, 0, "image");
-            explosion = new component(100, 200, "explosion.gif", 280, 50, "image");
+            myGamePiece = new component(140, 100, "assets/images/plane.png", 10, 120, "image");
+            myBackground = new component(656, 270, "assets/images/sky.jpg", 0, 0, "image");
+            explosion = new component(100, 200, "assets/images/explosion.gif", 280, 50, "image");
+            mySound = new sound("assets/sounds/boom.mp3")
             myGameArea.start();
             }
 
@@ -105,6 +108,7 @@
           function updateGameArea() {
             if (myGamePiece.crashWith(myObstacle), myGamePiece.crashWith(myObstacle2)) {
               explosion.update();
+              mySound.play();
             }
             else {
             myGameArea.clear();
@@ -140,6 +144,20 @@
           function stopMove() {
             myGamePiece.speedX = 0;
             myGamePiece.speedY = 0;
+          }
+
+          function sound(src) {
+          this.sound = document.createElement("audio");
+          this.sound.src = src;
+          this.sound.setAttribute("preload", "auto");
+          this.sound.setAttribute("controls", "none");
+          document.body.appendChild(this.sound);
+          this.play = function () {
+            this.sound.play();
+          }
+          this.stop = function() {
+            this.sound.pause();
+          }
           }
           }
       </script>

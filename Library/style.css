@@ -23,6 +23,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+	width: 100%;
 }
 
 .NavMenu{
@@ -131,7 +132,7 @@ body {
 	border-radius: 15px;
 	height: 150px;
 	width: 70px;
-	background-image: url("placeholder.png");
+	background-image: url("images/placeholder.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
@@ -186,7 +187,7 @@ body {
 .bgimg {
 	background-size: 100%;
 	background-repeat: no-repeat;
-	background-image: url("trepang.png");
+	background-image: url("images/trepang.png");
 }
 .gameop {
 	margin-bottom: -16.5;

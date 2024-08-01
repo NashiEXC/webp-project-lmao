@@ -54,32 +54,32 @@ window.addEventListener(
         }
     }
 );	
-uninstp.addEventListener(
-    "click",
-    function () {
-        popupcontent420.classList.add(
-        "show"
-        );
-    }
-);
-canceluninstp.addEventListener(
-    "click",
-    function () {
-        popupcontent420.classList.remove(
-            "show"
-        );
-    }
-);
-window.addEventListener(
-    "click",
-    function (event) {
-        if (event.target == popupcontent420) {
-            popupcontent420.classList.remove(
-                "show"
-            );
-        }
-    }
-);	
+//uninstp.addEventListener(
+//    "click",
+//    function () {
+//        popupcontent420.classList.add(
+//        "show"
+//        );
+//    }
+//);
+//canceluninstp.addEventListener(
+//   "click",
+//   function () {
+//        popupcontent420.classList.remove(
+//            "show"
+//        );
+//    }
+//);
+//window.addEventListener(
+//    "click",
+//    function (event) {
+//        if (event.target == popupcontent420) {
+//            popupcontent420.classList.remove(
+//                "show"
+//            );
+//       }
+//    }
+//);
 playbutttp.addEventListener(
     "click",
     function () {

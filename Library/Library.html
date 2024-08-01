@@ -104,7 +104,7 @@
 					<button id = "news1" class = "inbut" style = "height: 100%; width: 100%; margin-bottom: -40;">
 					</button>
 					<div id = "news1content" class = "popup">
-						<div style = "background-image: url(winniethepooh.jpg); background-repeat: no-repeat; background-size: cover ;"class = "popup-content-news">
+						<div style = "background-image: url(images/winniethepooh.jpg); background-repeat: no-repeat; background-size: cover ;"class = "popup-content-news">
 							<h3 class = "unifont">
 								:(
 							</h3>
@@ -133,7 +133,7 @@
 					<button id = "news2" class = "inbut" style = "height: 100%; width: 100%; margin-bottom: -40;">
 					</button>
 					<div id = "news2content" class = "popup">
-						<div style = "width: 550px; background-image: url(joe.jpg); background-repeat: no-repeat; background-size: cover ;"class = "popup-content-news">
+						<div style = "width: 550px; background-image: url(images/joe.jpg); background-repeat: no-repeat; background-size: cover ;"class = "popup-content-news">
 							<h3 class = "unifont">
 								Event: 
 							</br>
@@ -172,7 +172,7 @@
 					<button id = "news3" class = "inbut" style = "height: 100%; width: 100%; margin-bottom: -40;">
 					</button>
 					<div id = "news3content" class = "popup">
-						<div style = "background-image: url(winniethepooh.jpg); background-repeat: no-repeat; background-size: cover ;"class = "popup-content-news">
+						<div style = "background-image: url(images/winniethepooh.jpg); background-repeat: no-repeat; background-size: cover ;"class = "popup-content-news">
 							<h3 class = "unifont">
 								:(
 							</h3>
@@ -198,59 +198,46 @@
 				</td>
 			</tr>
 		</table>
+	</br>
+	<p class = "unifont">
+		Continue Playing
+	</p>
+	<table class = "gametable" border = "4" cellspacing = "0">
+		<td class = "bgimg">
+			<form method = "get" action = "games/trepang2/trepang2.html">
+				<input type = "submit" style = "height: 250; width: 900; color: white; background-color: transparent; border: none;" value = "" >
+			</form>
+			<button class = "unifont" id = "playbutttp" style = "border: none; width: 100; height: 50; border-radius: 0 10px 0 0 ;background-color: #0ce40c6b;">
+				Resume
+			</button>
+				<div id = "popupcontent69" class = "popup">
+					<div class = "popup-content">
+						<h1 style = "color: white; font-family: Consolas, Courier New, monospace;">
+							Launching Trepang²...
+						</h1>
+						<button style = "color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent;" id = "canceltp">
+							Cancel
+						</button>
+					</div>
+				</div>
+
+		</td>
+	</table>
 		<p style = "color: white;" class = "unifont">
 			Your Games
 		</p>
 		<table class = "gametable" border = "4" cellspacing = "0">
 			<tr style = "width: 100%;">
-				<td class = "bgimg" style = "width: 40%;">
-					<table border ="1" cellpadding = "10" style = "position: relative; top: 102px">
-						<tr>
-							<td>
-								<button id = "playbutttp" style = "color: white; border: 0px solid black; background-color: transparent;">
-									Resume
-								</button>
-								<div id = "popupcontent69" class = "popup">
-									<div class = "popup-content">
-										<h1 style = "color: white; font-family: Consolas, Courier New, monospace;">
-											Launching Trepang²...
-										</h1>
-										<button style = "color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent;" id = "canceltp">
-											Cancel
-										</button>
-									</div>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<button id = "uninstp" style = "color: white; border: 0px solid black; background-color: transparent;">
-									Uninstall
-								</button>
-								<div id = "popupcontent420" class = "popup">
-									<div class = "popup-content">
-										<h1 style = "color: white; font-family: Consolas, Courier New, monospace;">
-											Uninstall Trepang²...
-										</h1>
-										<button style = "color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent;" id = "canceluninstp">
-											Cancel
-										</button>
-									</div>
-								</div>
-							</td>
-						</tr>
-					</table>
-				</td>
 				<td>
 					<table style = "width: 900px; height: 235.5px; border-color: black; border-radius: 15px;" border = "1"  cellpadding = "0" cellspacing = "10">
 						<tr style = "width: 100%;">
-							<td class = "others" valign = "bottom" style = "width: 16%; background-image: url(penguin.png);"> 
+							<td class = "others" valign = "bottom" style = "width: 16%; background-image: url(images/penguin.png);"> 
 								<form method = "get" action = "games\penguin\penguin.html">
 									<input style = "border: 0px solid black; background-color: transparent;width: 100%; height: 175" value = "" type = "submit"/>
 								</form>
 								
 									<button id = "playbuttpen" style = "border: 0px solid black; background-color: transparent;">
-									<img style = "margin-left: -10px; margin-bottom: -1px;" src = play.png alt = "Install">
+									<img style = "margin-left: -10px; margin-bottom: -1px;" src = images/play.png alt = "Install">
 								</button>
 								<div id = "popupcontent" class = "popup">
 									<div class = "popup-content">
@@ -263,9 +250,9 @@
 									</div>
 								</div>
 							</td>
-							<td class = "others" valign = "bottom" style = "width: 16%; background-image: url(pd3.png);"> 
+							<td class = "others" valign = "bottom" style = "width: 16%; background-image: url(images/pd3.png);"> 
 								<button id = "playpd3" style = "border: 0px solid black;background-color: transparent;">
-									<img style = "margin-left: -10px; margin-bottom: -1px;" src = play.png alt = "Install">
+									<img style = "margin-left: -10px; margin-bottom: -1px;" src = images/play.png alt = "Install">
 								</button>
 									<div id = "popupcontent2" class = "popup">
 										<div class = "popup-content">
@@ -278,9 +265,9 @@
 										</div>
 									</div>
 								</td>
-								<td class = "others" valign = "bottom" style = "width: 16%; background-image: url(doom.png);"> 
+								<td class = "others" valign = "bottom" style = "width: 16%; background-image: url(images/doom.png);"> 
 									<button id = "playdoom" style = "border: 0px solid black;background-color: transparent;">
-										<img style = "margin-left: -10px; margin-bottom: -1px;" src = play.png alt = "Install">
+										<img style = "margin-left: -10px; margin-bottom: -1px;" src = images/play.png alt = "Install">
 									</button>
 									<div id = "popupcontent3" class = "popup">
 										<div class = "popup-content">
@@ -293,9 +280,9 @@
 										</div>
 									</div>
 								</td>
-								<td class = "others" valign = "bottom" style = "width: 16%; background-image: url(cs1.6.png);"> 
+								<td class = "others" valign = "bottom" style = "width: 16%; background-image: url(images/cs1.6.png);"> 
 									<button id = "incs" style = "border: 0px solid black;background-color: transparent;">
-										<img style = "margin-left: -10px; margin-bottom: -1px;" src = dl.png alt = "Install">
+										<img style = "margin-left: -10px; margin-bottom: -1px;" src = images/dl.png alt = "Install">
 									</button>
 									<div id = "popupcontent4" class = "popup">
 										<div class = "popup-content">
@@ -311,9 +298,9 @@
 										</div>
 									</div>
 								</td>
-								<td class = "others" valign = "bottom" style = "width: 16%; background-image: url(pd2.png);"> 
+								<td class = "others" valign = "bottom" style = "width: 16%; background-image: url(images/pd2.png);"> 
 									<button id = "inpd2" style = "border: 0px solid black;background-color: transparent;">
-										<img style = "margin-left: -10px; margin-bottom: -1px;" src = dl.png alt = "Install">
+										<img style = "margin-left: -10px; margin-bottom: -1px;" src = images/dl.png alt = "Install">
 									</button>
 									<div id = "popupcontent5" class = "popup">
 										<div class = "popup-content">
