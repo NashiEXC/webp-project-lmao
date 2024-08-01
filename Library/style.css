@@ -5,7 +5,7 @@
 }
 
 header{
-    background-color: #272b2d
+    background-color: #293236
 }
 
 li{
@@ -104,7 +104,7 @@ a{
 	background-color: #272b2d;
 }
 body {
-	background-color: #272b2d;
+	background-color: #29414d;
 }
 .headtable {
 	border-color: black;
@@ -131,7 +131,7 @@ body {
 	border-radius: 15px;
 	height: 150px;
 	width: 70px;
-	background-image: url("sieg.png");
+	background-image: url("placeholder.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
