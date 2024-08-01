@@ -12,13 +12,15 @@
       </style>
     </head>
     <body onload = "startGame()">
+    
+    <!--Audio Container-->
+      <audio id = "explosion">
+        <source src = "boom.mp3" type = "audio/mp3">
+      </audio>
+    <!--Audio Container-->
 
       <script>
-        const timeout = setTimeout(sound, 0);
-        function stoptimeout() {
-          clearTimeout(timeout)
-        }
-
+        
         var myGamePiece;
         var myBackground;
         var myObstacle;
@@ -39,7 +41,6 @@
             this.sound.src = src;
             this.sound.setAttribute("preload", "auto");
             this.sound.setAttribute("controls", "none");
-            this.sound.setAttribute("loop", "false");
             this.sound.style.display = "none";
             document.body.appendChild(this.sound);
             this.play = function () {
@@ -105,6 +106,7 @@
             this.x += this.speedX;
             this.y += this.speedY;
           }
+
           this.crashWith = function(otherobj) {
             var myleft = this.x;
             var myright = this.x + (this.width);
@@ -130,7 +132,6 @@
               explosion.update();
               mySound.play();
             }
-
             else {
             myGameArea.clear();
             myBackground.newPos();
@@ -147,6 +148,7 @@
             myGamePiece.update();
           }
         }
+
           function moveup() {
             myGamePiece.speedY -= 1;
           }
@@ -167,9 +169,10 @@
             myGamePiece.speedX = 0;
             myGamePiece.speedY = 0;
           }
-        
 
-          
+          function playsound() {
+            document.getElementById("explosion")
+          }
       </script>
     </body>
     
