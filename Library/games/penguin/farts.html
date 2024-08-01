@@ -7,18 +7,25 @@
           border: 1px solid #d3d3d3;
           background-color: #f1f1f1;
           width: 100%;
-          height: 100%;
+          height: 85%;
         }
       </style>
     </head>
     <body onload = "startGame()">
 
       <script>
-        function startGame() {
-          myGameArea.start();
-          myGamePiece = new component(140, 10, "red", 10, 120);
-        }
 
+        var myGamePiece;
+        var myObstacle;
+        var myBackground;
+          function startGame() {
+            myObstacle = new component(30, 200, "grey", 300, 120);
+            myObstacle2 = new component(30, 200, "grey", 340, 140);
+            myGamePiece = new component(140, 100, "plane.png", 10, 120, "image");
+            myBackground = new component(656, 270, "sky.jpg", 0, 0, "image");
+            explosion = new component (100, 200, "explosion.gif", 280, 50, "image");
+            myGameArea.start();
+            }
 
         var myGameArea = {
           canvas : document.createElement("canvas"),
@@ -28,33 +35,27 @@
             this.context = this.canvas.getContext("2d");
             document.body.insertBefore(this.canvas, document.body.childNodes[0]);
             this.interval = setInterval(updateGameArea, 20);
-            window.addEventListener('keydown', function (e) {
-              myGameArea.key = e.keyCode;
-            })
-            window.addEventListener('keyup', function (e) {
-              myGameArea.key = false;
-            })
+            window.addEventListener(
+              'keydown', function (e) {myGameArea.key = e.keyCode;}
+            )
+            window.addEventListener(
+              'keyup', function (e) {myGameArea.key = false;}
+            )
           },
           clear : function() {
             this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
           },
           stop : function() {
-            clearInterval(this.interval);
+            clearInterval(this,interval);
           }
         }
 
-
-
-        var myGamePiece;
-        var myObstacle;
-          function startGame() {
-            myGameArea.start();
-            myObstacle = new component(10, 200, "green", 300, 120);
-            myObstacle2 = new component(10, 200, "green", 340, 140);
-            myGamePiece = new component(30, 30, "red", 10, 120);
+          function component(width, height, color, x, y, type) {
+            this.type = type;
+            if (type == "image") {
+              this.image = new Image();
+              this.image.src = color;
             }
-
-          function component(width, height, color, x, y) {
             this.width = width;
             this.height = height;
             this.speedX = 0;
@@ -63,9 +64,20 @@
             this.y = y;
             this.update = function() {
               ctx = myGameArea.context;
+              if (type == "image") {
+                ctx.drawImage(
+                  this.image,
+                  this.x,
+                  this.y,
+                  this.width,
+                  this.height);
+              }
+              else {
               ctx.fillStyle = color;
               ctx.fillRect(this.x, this.y, this.width, this.height);
           }
+        }
+        
           this.newPos = function() {
             this.x += this.speedX;
             this.y += this.speedY;
@@ -92,18 +104,21 @@
 
           function updateGameArea() {
             if (myGamePiece.crashWith(myObstacle), myGamePiece.crashWith(myObstacle2)) {
-              myGameArea.stop();
+              explosion.update();
             }
             else {
             myGameArea.clear();
             myObstacle.update();
             myObstacle2.update();
+            
             myGamePiece.speedX = 0;
             myGamePiece.speedY = 0;
             if (myGameArea.key && myGameArea.key == 65) {myGamePiece.speedX = -1.5; }
             if (myGameArea.key && myGameArea.key == 68) {myGamePiece.speedX = 1.5; }
             if (myGameArea.key && myGameArea.key == 87) {myGamePiece.speedY = -1.5; }
             if (myGameArea.key && myGameArea.key == 83) {myGamePiece.speedY = 1.5; }
+            myBackground.newPos();
+            myBackground.update();
             myGamePiece.newPos();
             myGamePiece.update();
           }
