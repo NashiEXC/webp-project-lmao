@@ -13,26 +13,26 @@
         .container {
             background-color: #29414d;
             padding: 20px;
-            border: 1px solid #000; /* Black border */
+            border: 1px solid #000;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             padding-top: 100px;
         }
         h1 {
             text-align: center;
-            color: #fff; /* White text */
+            color: #fff;
         }
         .box {
             background-color: #29414d;
             padding: 15px;
             margin-bottom: 20px;
-            border: 1px solid #000; /* Black border */
+            border: 1px solid #000; 
             border-radius: 8px;
         }
         .box h2 {
             margin-top: 0;
             font-size: 1.5rem;
-            color: #fff; /* White text */
+            color: #fff; 
             display: flex;
             align-items: center;
         }
@@ -48,13 +48,17 @@
             margin-bottom: 10px;
             display: flex;
             align-items: center;
-            color: #fff; /* White text */
+            color: #fff;
+            flex-direction: column;
         }
         .box ul li img {
             margin-right: 10px;
         }
         .box ul li:last-child {
             margin-bottom: 0;
+        }
+        .box ul li video {
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -84,26 +88,73 @@
     <div class="box">
         <h2><img src="EldenRing.jpg" alt="EldenRing.jpg" height="100" width="100">Elden Ring</h2>
         <ul>
-            <li><img src="Morgott.jpg" alt="Morgott.jpg" height="50" width="50">Defeat Shardbearer Morgott - Unlocked on 2023-05-20</li>
-            <li><img src="Godfrey.jpg" alt="Godfrey.jpg" height="50" width="50">Defeat Godfrey, First Elden Lord - Unlocked on 2023-05-20</li>
-            <li><img src="Radahn.jpg" alt="Radahn.jpg" height="50" width="50">Defeat Shardbearer Radahn - Unlocked on 2023-05-12</li>
+            <li>
+                <video width="320" height="240" controls>
+                    <source src="Morgott.mp4" type="video/mp4">
+                </video>
+                Defeat Shardbearer Morgott - Unlocked on 2023-05-20
+            </li>
+            <li>
+                <video width="320" height="240" controls>
+                    <source src="Godfrey.mp4" type="video/mp4">
+                </video>
+                Defeat Godfrey, First Elden Lord - Unlocked on 2023-05-20
+            </li>
+            <li>
+                <video width="320" height="240" controls>
+                    <source src="Radahn.mp4" type="video/mp4">
+                    
+                </video>
+                Defeat Shardbearer Radahn - Unlocked on 2023-05-12
+            </li>
         </ul>
     </div>
     <div class="box">
         <h2><img src="RedDeadRedemption.jpg" alt="RedDeadRedemption.jpg" height="100" width="100">Red Dead Redemption 2</h2>
         <ul>
-            <li><img src="Rich.jpg" alt="Rich.jpg" height="50" width="50">Take From the Rich (Rob or loot $250) - Unlocked on 2023-03-25</li>
-            <li><img src="Poor.jpg" alt="Poor.jpg" height="50" width="50">Give to the Poor (Donate $250 to the gang tipping box) - Unlocked on 2023-03-18</li>
-            <li><img src="Locked.jpg" alt="Locked.jpg" height="50" width="50">Locked and Loaded (Upgrade each available component for a single sidearm or longarm weapon) - Unlocked on 2023-03-11</li>
+            <li>
+                <video width="320" height="240" controls>
+                    <source src="Rich.mp4" type="video/mp4">
+                </video>
+                Take From the Rich (Rob or loot $250) - Unlocked on 2023-03-25
+            </li>
+            <li>
+                <video width="320" height="240" controls>
+                    <source src="Poor.mp4" type="video/mp4">
+                </video>
+                Give to the Poor (Donate $250 to the gang tipping box) - Unlocked on 2023-03-18
+            </li>
+            <li>
+                <video width="320" height="240" controls>
+                    <source src="Locked.mp4" type="video/mp4">
+                </video>
+                Locked and Loaded (Upgrade each available component for a single sidearm or longarm weapon) - Unlocked on 2023-03-11
+            </li>
         </ul>
     </div>
     <div class="box">
         <h2><img src="DeepRockGalactic.jpg" alt="DeepRockGalactic.jpg" height="100" width="100">Deep Rock Galactic</h2>
         <ul>
-            <li><img src="Movin.jpg" alt="Movin.jpg" height="50" width="50">Movin' On Up (Promote any Dwarf at least once) - Unlocked on 2023-03-01</li>
-            <li><img src="Thick.jpg" alt="Thick.jpg" height="50" width="50">Thick-Skinned (Survive a Hazard Level 4 mission from start to finish) - Unlocked on 2023-02-20</li>
-            <li><img src="State.jpg" alt="State.jpg" height="50" width="50">State Of The Art - Unlocked on 2023-02-20</li>
+            <li>
+                <video width="320" height="240" controls>
+                    <source src="Movin.mp4" type="video/mp4">
+                </video>
+                Movin' On Up (Promote any Dwarf at least once) - Unlocked on 2023-03-01
+            </li>
+            <li>
+                <video width="320" height="240" controls>
+                    <source src="Thick.mp4" type="video/mp4">
+                </video>
+                Thick-Skinned (Survive a Hazard Level 4 mission from start to finish) - Unlocked on 2023-02-20
+            </li>
+            <li>
+                <video width="320" height="240" controls>
+                    <source src="State.mp4" type="video/mp4">
+                </video>
+                State Of The Art - Unlocked on 2023-02-20
+            </li>
         </ul>
     </div>
 </body>
 </html>
+
