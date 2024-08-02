@@ -43,6 +43,8 @@
 
 figcaption{
     text-align: center;
+    font-family: 'Consolas', Courier, monospace;
+    color: white;
 }
 
 .footerlink{

@@ -43,3 +43,7 @@ select {
     max-width: 40%;
     min-height: 30%;
 }
+
+.footer{
+    background-color: #272b2d;
+}

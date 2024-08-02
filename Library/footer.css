@@ -23,7 +23,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px;
 }
 
 .footerlist{
@@ -43,6 +42,8 @@
 
 figcaption{
     text-align: center;
+    font-family: 'Consolas', Courier, monospace;
+    color: white;
 }
 
 .footerlink{
@@ -51,3 +52,4 @@ figcaption{
 .footerlink:hover{
     color:#04688d;
 }
+
