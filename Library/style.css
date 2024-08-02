@@ -36,10 +36,12 @@ a{
 
 .navLink{
     transition: 0.5s ease-in-out;
+	
 }
 
 .navLink:hover{
     color:#04688d;
+	text-decoration: underline;
 }
 
 .NavSideBar{

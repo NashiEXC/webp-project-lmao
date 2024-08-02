@@ -44,6 +44,7 @@ a{
 
 .navLink:hover{
     color:#04688d;
+    text-decoration: underline;
 }
 
 .NavSideBar{
