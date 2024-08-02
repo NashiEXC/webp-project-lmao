@@ -43,10 +43,3 @@ li{
 figcaption{
     text-align: center;
 }
-
-.footerlink{
-    transition: 0.5s ease-in-out;
-}
-.footerlink:hover{
-    color:#04688d;
-}

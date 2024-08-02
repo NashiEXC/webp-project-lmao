@@ -4,16 +4,17 @@
     box-sizing: border-box;
 }
 
-ul {
+.footerlist {
     list-style-type: none;
     margin: 0;
     padding: 30px;
     overflow: hidden;
     background-color: #272b2d;
+    font-family: 'Consolas', Courier, monospace;
   }
   
 
-li{
+.footerobject{
     float: left;
 }
 
