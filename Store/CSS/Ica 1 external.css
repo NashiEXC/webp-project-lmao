@@ -6,7 +6,9 @@ li {
 #table {
     color: black;
     border: none;
-    border-color: black;            
+    border-color: black;   
+    min-width: 3vw;
+    min-height: 3vw;
 }
 .lib {
     font-size: 20px ;
@@ -19,14 +21,14 @@ li {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    background-color: #29414d;
+    background-color: #272b2d;
     color: white;
     border-spacing: 5px;
     height: 999cqi;
     position: relative;
  }
 .table {
-    background-color: #1f313a;
+    background-color: #272b2d;
     color: white;
     font-family: "Consolas", "Courier New", monospace;   
 }
@@ -59,14 +61,15 @@ li {
     flex-basis: 100%;
     border-spacing: 25px;
     padding: 10px;
-    background-color: #1f313a;
+    background-color: #272b2d;
     font-family: "Consolas", "Courier New", monospace;
     color: white;
     text-align: center;
     font-size: larger;
+    font-weight: bold;
 }
 .tt {
-    background-color: #29414d;
+    background-color: #272b2d;
     font-family: "Consolas", "Courier New", monospace;
     color: white;
     font-size: xxx-large;
@@ -75,13 +78,14 @@ li {
     
 }
 body {
-    background-color: #29414d;
+    background-color: #272b2d;
+    font-size: 100%;
 }
 .gcover {
     padding: 5px;
 }
 textarea {
-    background-color: #1f313a;
+    background-color: #272b2d;
     color:  white;
     font-family: "Consolas", "Courier New", monospace;
     padding: 10px;
@@ -89,7 +93,7 @@ textarea {
     height: 400px;
     overflow: visable;
     resize: none;
-    scrollbar-color:  #29414d grey;
+    scrollbar-color:  #272b2d grey;
     border-radius: 5px;
     border-color: grey;
 }
@@ -114,22 +118,19 @@ textarea {
     color: black;
 }
 #coat {
-    padding-top: 90px;
+    padding-top: 100px;
 }
 .Screenshots {
     padding: 20px;
 }
-.border {
-    border: 1px solid white;
-}
-.gametext {
+
+.gametext{
     transition: 0.5s ease-in-out;
 }
 
-.gametext:hover {
+.gametext:hover{
     color:#04688d;
 }
-
-.footer{
-    background-color: #272b2d;
+#gt {
+    font-size:  4vw;
 }
