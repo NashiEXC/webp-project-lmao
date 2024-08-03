@@ -5,11 +5,12 @@
 }
 
 header{
-    background-color: #272b2d
+    background-color: #293236
 }
 
 li{
     list-style: none;
+	font-weight: bolder;
 }
 
 a{
@@ -23,6 +24,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+	width: 100%;
 }
 
 .NavMenu{
@@ -35,10 +37,12 @@ a{
 
 .navLink{
     transition: 0.5s ease-in-out;
+	
 }
 
 .navLink:hover{
     color:#04688d;
+	text-decoration: underline;
 }
 
 .NavSideBar{
@@ -104,7 +108,7 @@ a{
 	background-color: #272b2d;
 }
 body {
-	background-color: #272b2d;
+	background-color: #29414d;
 }
 .headtable {
 	border-color: black;
@@ -131,7 +135,7 @@ body {
 	border-radius: 15px;
 	height: 150px;
 	width: 70px;
-	background-image: url("sieg.png");
+	background-image: url("images/placeholder.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
@@ -186,7 +190,7 @@ body {
 .bgimg {
 	background-size: 100%;
 	background-repeat: no-repeat;
-	background-image: url("trepang.png");
+	background-image: url("images/trepang.png");
 }
 .gameop {
 	margin-bottom: -16.5;
@@ -214,4 +218,8 @@ body {
 .unifont {
 	font-family: "Consolas", "Courier New", monospace;
 	color: white;
+}
+
+.footer{
+    background-color: #272b2d;
 }

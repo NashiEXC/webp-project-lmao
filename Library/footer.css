@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footerlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 30px;
+    overflow: hidden;
+    background-color: #272b2d;
+    font-family: 'Consolas', Courier, monospace;
+  }
+  
+
+.footerobject{
+    float: left;
+    font-size: larger;
+}
+
+.footer{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerlist{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    text-wrap:nowrap;
+    font-size: larger;
+}
+
+.footerlogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption{
+    text-align: center;
+    font-family: 'Consolas', Courier, monospace;
+    color: white;
+}
+
+.footerlink{
+    transition: 0.5s ease-in-out;
+}
+.footerlink:hover{
+    color:#04688d;
+}
+
