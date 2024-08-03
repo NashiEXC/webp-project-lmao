@@ -36,23 +36,36 @@ select {
     font-family: "Consolas", "Courier New", monospace;
     border-radius: 5px;
 }
-.BB {
-    background-color: #228B22;
-    width: 170px;
-}
 .GI {
     max-width: 150px;
     min-width: 40%;
 }
 .idk {
-    display: inline-block;
     border: 0px;
     font-family: "Consolas", "Courier New", monospace;
     color: white;
-    max-width: 150px;
-    min-width: 40%;
 }
 
 .footer{
     background-color: #272b2d;
+}
+::-webkit-input-placeholder{
+    color: white;
+}
+#bb {
+    font-family: "Consolas", "Courier New", monospace;
+    width: 170px;
+    position: relative;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.button {
+    background-color: #228B22;
+    color: black;
+}
+.button:hover {
+    background-color: white;
+    color: black;
 }
