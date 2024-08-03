@@ -14,6 +14,7 @@ table, th, td {
     background-color: #29414d;
 }
 .cart {
+    background-color: white;
 
 }
 textarea {
@@ -40,8 +41,16 @@ select {
     width: 170px;
 }
 .GI {
-    max-width: 40%;
-    min-height: 30%;
+    max-width: 150px;
+    min-width: 40%;
+}
+.idk {
+    display: inline-block;
+    border: 0px;
+    font-family: "Consolas", "Courier New", monospace;
+    color: white;
+    max-width: 150px;
+    min-width: 40%;
 }
 
 .footer{
