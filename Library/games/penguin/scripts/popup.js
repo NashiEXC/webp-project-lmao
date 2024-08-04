@@ -6,7 +6,7 @@ playbutton.addEventListener(
         );
     }
 );
-canceltp.addEventListener(
+cancel.addEventListener(
     "click",
     function () {
         popupcontent.classList.remove(
