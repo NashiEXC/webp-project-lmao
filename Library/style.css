@@ -24,7 +24,11 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
-	width: 100%;
+	position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    background-color: #272b2d;
 }
 
 .NavMenu{
@@ -48,6 +52,10 @@ a{
 .NavSideBar{
     display: none;
     cursor: pointer;  
+}
+
+.container{
+	padding-top: 100px;
 }
 
 .Bar{
