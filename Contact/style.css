@@ -28,14 +28,23 @@ td{
 
 .mailfield{
     height: 40px;
+    border-radius: 10px;
+    width: 200px;
 }
 
 .namefield{
     height: 40px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+textarea{
+    border-radius: 10px;
 }
 
 .reason{
     height: 30px;
+    border-radius: 10px;
 }
 
 .Send{
