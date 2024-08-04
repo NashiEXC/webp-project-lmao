@@ -1,0 +1,11 @@
+body{
+    background-color: #29414d;
+    font-family: 'Consolas', Courier, monospace;
+    color: white;
+}
+
+.list{
+    padding-top: 100px;
+    font-size: xx-large;
+    text-align: center;
+}
