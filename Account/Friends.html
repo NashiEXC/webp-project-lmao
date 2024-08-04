@@ -27,7 +27,8 @@
         .profile-info {
             margin-top: 20px;
             display: flex;
-            align-items: center;
+            flex-direction: column; /* Change to column for stacking */
+            align-items: flex-start; /* Align items to the start */
         }
         .profile-info .avatar {
             margin-right: 15px;
@@ -73,7 +74,13 @@
             height: 100px;
             border-radius: 50%;
         }
-	</style>
+        .profile-info .status {
+            margin-bottom: 10px; /* Adjust the spacing as needed */
+        }
+        .profile-info .last-online {
+            color: #ccc; /* Optional: Change color for differentiation */
+        }
+    </style>
 <body>
     <header>
         <nav class="navbar">
@@ -102,35 +109,33 @@
             <div class="NavSideBar">
                 <span class="Bar"></span>
                 <span class="Bar"></span>
-                <spHeader&SidebarCode/Header.jsan class="Bar"></span>
+                <span class="Bar"></span>
             </div>
         </nav>
     </header>
     <script src="Header.js"></script>
-<div class="container">
-    <h1>Friends</h1>
-</div></br>
-<div class="box">
-<div class="profile-info">
-        <h2><img src="img_avatar.png" alt="Avatar" class="avatar">Friend 1</h2>
-            Online
-			</br>Last online: 1 Week ago
-            
+    <div class="container">
+        <h1>Friends</h1>
+    </div>
+    </br>
+    <div class="box">
+        <div class="profile-info">
+            <h2><img src="img_avatar.png" alt="Avatar" class="avatar">Friend 1</h2>
+            <span class="status">Online</span>
+            <span class="last-online">Last online: 1 Week ago</span>
         </div>
     </div>
-	<div class="box">
-<div class="profile-info">
-        <h2><img src="img_avatar.png" alt="Avatar" class="avatar">Friend 2</h2>
-            Online
-			</br>Last online: 2 Week ago
-            
+    <div class="box">
+        <div class="profile-info">
+            <h2><img src="img_avatar.png" alt="Avatar" class="avatar">Friend 2</h2>
+            <span class="status">Online</span>
+            <span class="last-online">Last online: 2 Weeks ago</span>
         </div>
     </div>
-	<div class="box">
-<div class="profile-info">
-        <h2><img src="img_avatar.png" alt="Avatar" class="avatar">Friend 3</h2>
-            Offline
-			</br>Last online: 5 Years ago
-            
+    <div class="box">
+        <div class="profile-info">
+            <h2><img src="img_avatar.png" alt="Avatar" class="avatar">Friend 3</h2>
+            <span class="status">Offline</span>
+            <span class="last-online">Last online: 5 Years ago</span>
         </div>
     </div>
