@@ -1,0 +1,26 @@
+
+body{
+    color: white;
+    font-family: 'Consolas', Courier, monospace;   
+    background-color: #29414d;
+}
+
+h1{
+    
+    text-align: center;
+    font-size: 4rem;
+}
+
+.back{
+    text-decoration: none;
+    color: white;
+}
+
+.back{
+    transition: 0.5s ease-in-out;
+}
+
+.back:hover{
+    color:#04688d;
+    text-decoration: underline;
+}
