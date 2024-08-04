@@ -1,10 +1,10 @@
 let currentImageIndex = 0;
 const images = [
-    "/Store/Pictures/Screenshots/Sekiro/SSS1.png",
-    "/Store/Pictures/Screenshots/Sekiro/SSS2.png",
-    "/Store/Pictures/Screenshots/Sekiro/SSS3.png",
-    "/Store/Pictures/Screenshots/Sekiro/SSS4.png",
-    "/Store/Pictures/Screenshots/Sekiro/SSS5.png",
+    "/Store/Pictures/Screenshots/ER/ERSS1.jpg",
+    "/Store/Pictures/Screenshots/ER/ERSS2.jpg",
+    "/Store/Pictures/Screenshots/ER/ERSS3.jpg",
+    "/Store/Pictures/Screenshots/ER/ERSS4.jpg",
+    "/Store/Pictures/Screenshots/ER/ERSS5.jpg",
 ];
 const carousel = document.getElementById('Carousel');
 
