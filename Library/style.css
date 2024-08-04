@@ -149,14 +149,14 @@ body {
 }
 .newsdesc {
 	background-color: grey;
-	color: black;
+	color: white;
 	border-radius: 0px 15px 0px 15px;
 	width: 150px;
 	height: 30px;
 	font-size: 12;
 	margin-left: -1.416px;
 	margin-bottom: -1.122345567 ;
-	font-family: "Comic Sans Ms";
+	font-family: 'Consolas', Courier, monospace;
 }
 .memefont {
 	font-family: "Comic Sans Ms";
