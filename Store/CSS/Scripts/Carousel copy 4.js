@@ -5,6 +5,13 @@ const images = [
     "/Store/Pictures/Screenshots/Sekiro/SSS3.png",
     "/Store/Pictures/Screenshots/Sekiro/SSS4.png",
     "/Store/Pictures/Screenshots/Sekiro/SSS5.png",
+
+
+    "/Store/Pictures/Screenshots/Sekiro/DRGSS1.png",
+    "/Store/Pictures/Screenshots/Sekiro/DRGSS2.png",
+    "/Store/Pictures/Screenshots/Sekiro/DRGSS3.png",
+    "/Store/Pictures/Screenshots/Sekiro/DRGSS4.png",
+    "/Store/Pictures/Screenshots/Sekiro/DRGSS5.png",
 ];
 const carousel = document.getElementById('Carousel');
 
