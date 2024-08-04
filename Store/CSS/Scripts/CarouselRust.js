@@ -1,10 +1,10 @@
 let currentImageIndex = 0;
 const images = [
-    "/Store/Pictures/Screenshots/Rust/RSS1.png",
-    "/Store/Pictures/Screenshots/Rust/RSS2.png",
-    "/Store/Pictures/Screenshots/Rust/RSS3.png",
-    "/Store/Pictures/Screenshots/Rust/RSS4.png",
-    "/Store/Pictures/Screenshots/Rust/RSS5.png",
+    "../Pictures/Screenshots/Rust/RSS1.png",
+    "../Pictures/Screenshots/Rust/RSS2.png",
+    "../Pictures/Screenshots/Rust/RSS3.png",
+    "../Pictures/Screenshots/Rust/RSS4.png",
+    "../Pictures/Screenshots/Rust/RSS5.png",
 ];
 const carousel = document.getElementById('Carousel');
 

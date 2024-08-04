@@ -1,10 +1,10 @@
 let currentImageIndex = 0;
 const images = [
-    "/Store/Pictures/Screenshots/GGST/GGSS1.jpg",
-    "/Store/Pictures/Screenshots/GGST/GGSS2.jpg",
-    "/Store/Pictures/Screenshots/GGST/GGSS3.jpg",
-    "/Store/Pictures/Screenshots/GGST/GGSS4.jpg",
-    "/Store/Pictures/Screenshots/GGST/GGSS5.jpg",
+    "../Pictures/Screenshots/GGST/GGSS1.jpg",
+    "../Pictures/Screenshots/GGST/GGSS2.jpg",
+    "../Pictures/Screenshots/GGST/GGSS3.jpg",
+    "../Pictures/Screenshots/GGST/GGSS4.jpg",
+    "../Pictures/Screenshots/GGST/GGSS5.jpg",
 ];
 const carousel = document.getElementById('Carousel');
 

@@ -1,10 +1,10 @@
 let currentImageIndex = 0;
 const images = [
-    "/Store/Pictures/Screenshots/Doom/DSS1.png",
-    "/Store/Pictures/Screenshots/Doom/DSS2.png",
-    "/Store/Pictures/Screenshots/Doom/DSS3.png",
-    "/Store/Pictures/Screenshots/Doom/DSS4.png",
-    "/Store/Pictures/Screenshots/Doom/DSS5.png",
+    "../Pictures/Screenshots/Doom/DSS1.png",
+    "../Pictures/Screenshots/Doom/DSS2.png",
+    "../Pictures/Screenshots/Doom/DSS3.png",
+    "../Pictures/Screenshots/Doom/DSS4.png",
+    "../Pictures/Screenshots/Doom/DSS5.png",
 ];
 const carousel = document.getElementById('Carousel');
 
