@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 30px;
+    overflow: hidden;
+    background-color: #272b2d;
+  }
+  
+
+li{
+    float: left;
+}
+
+.footer{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.footerlist{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    text-wrap:nowrap;
+    font-size: larger;
+}
+
+.footerlogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption{
+    text-align: center;
+}

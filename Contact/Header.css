@@ -10,6 +10,7 @@ header{
 
 li{
     list-style: none;
+    font-weight: bolder;
 }
 
 a{
@@ -44,6 +45,7 @@ a{
 
 .navLink:hover{
     color:#04688d;
+    text-decoration: underline;
 }
 
 .NavSideBar{

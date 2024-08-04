@@ -10,6 +10,7 @@ header{
 
 li{
     list-style: none;
+	font-weight: bolder;
 }
 
 a{
@@ -36,10 +37,12 @@ a{
 
 .navLink{
     transition: 0.5s ease-in-out;
+	
 }
 
 .navLink:hover{
     color:#04688d;
+	text-decoration: underline;
 }
 
 .NavSideBar{
@@ -215,4 +218,8 @@ body {
 .unifont {
 	font-family: "Consolas", "Courier New", monospace;
 	color: white;
+}
+
+.footer{
+    background-color: #272b2d;
 }

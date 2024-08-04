@@ -34,11 +34,31 @@ body{
     table-layout: fixed;
 }
 
-.blogcontent{
+.blogcontent1{
     width: 400px;
     height: 300px;
     padding-top: 60%;
+    background-image: url(../images/sale.jpg); 
+    background-repeat: no-repeat; 
+    background-size: 400px 279px;
+}
 
+.blogcontent2{
+    width: 400px;
+    height: 300px;
+    padding-top: 60%;
+    background-image: url(../images/newreleases.jpg); 
+    background-repeat: no-repeat; 
+    background-size: 400px 279px;
+}
+
+.blogcontent3{
+    width: 400px;
+    height: 300px;
+    padding-top: 60%;
+    background-image: url(../images/upcoming.jpg); 
+    background-repeat: no-repeat; 
+    background-size: 400px 279px;
 }
 
 .Main {
