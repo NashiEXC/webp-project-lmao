@@ -40,8 +40,14 @@
     margin-right: auto;
 }
 
+.footer{
+    background-color: #272b2d;
+}
+
 figcaption{
     text-align: center;
+    font-family: 'Consolas', Courier, monospace;
+    color: white;
 }
 
 .footerlink{
