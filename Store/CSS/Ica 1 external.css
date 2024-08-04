@@ -21,14 +21,14 @@ li {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    background-color: #272b2d;
+    background-color: #29414d;
     color: white;
     border-spacing: 5px;
     height: 999cqi;
     position: relative;
  }
 .table {
-    background-color: #272b2d;
+    background-color: #29414d;
     color: white;
     font-family: "Consolas", "Courier New", monospace;   
 }
@@ -61,7 +61,7 @@ li {
     flex-basis: 100%;
     border-spacing: 25px;
     padding: 10px;
-    background-color: #272b2d;
+    background-color: #29414d;
     font-family: "Consolas", "Courier New", monospace;
     color: white;
     text-align: center;
@@ -69,7 +69,7 @@ li {
     font-weight: bold;
 }
 .tt {
-    background-color: #272b2d;
+    background-color: #29414d;
     font-family: "Consolas", "Courier New", monospace;
     color: white;
     font-size: xxx-large;
@@ -78,14 +78,17 @@ li {
     
 }
 body {
-    background-color: #272b2d;
+    background-color: #29414d;
     font-size: 100%;
 }
 .gcover {
     padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 textarea {
-    background-color: #272b2d;
+    background-color: #29414d;
     color:  white;
     font-family: "Consolas", "Courier New", monospace;
     padding: 10px;
@@ -93,11 +96,11 @@ textarea {
     height: 400px;
     overflow: visable;
     resize: none;
-    scrollbar-color:  #272b2d grey;
+    scrollbar-color:  #29414d grey;
     border-radius: 5px;
     border-color: grey;
 }
-#bb {
+#openWindow {
     font-family: "Consolas", "Courier New", monospace;
     width: 280px;
     height: 30px;
@@ -112,6 +115,16 @@ textarea {
 .button {
     background-color: #228B22;
     color: black;
+    font-family: "Consolas", "Courier New", monospace;
+    width: 280px;
+    height: 30px;
+    position: relative;
+    display: block;
+    margin: auto;
+    font-weight: 1000;
+    font-size: larger;
+    cursor: pointer;
+    transition-duration: 0.5s;
 }
 .button:hover {
     background-color: white;
@@ -120,17 +133,50 @@ textarea {
 #coat {
     padding-top: 100px;
 }
-.Screenshots {
-    padding: 20px;
-}
-
 .gametext{
     transition: 0.5s ease-in-out;
 }
-
 .gametext:hover{
     color:#04688d;
 }
 #gt {
     font-size:  4vw;
+}
+.ss {
+    padding-left: 30px;
+    padding-top: 50px;
+    vertical-align: top;
+}
+.sss {
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ssss {
+    max-height: 100px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sssss {
+    margin-left: auto;
+    margin-right: auto;
+}
+.ssssss {
+    display: block;
+    border-collapse: collapse;
+    padding: 5px;
+    height: 336px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ssh {
+    transition: 0.3s ease-in-out;
+}
+.ssh:hover {
+    cursor: pointer;
+    background-color: #1c2c35;
 }

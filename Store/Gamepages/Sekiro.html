@@ -3,11 +3,19 @@
 <head>
     <link rel="stylesheet" href="../CSS/Header.css">
     <link rel="stylesheet" href="../CSS/Ica 1 external.css">
+    <link rel="stylesheet" href="../CSS/Carousel.js">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    <style>
+        #carousel {
+            height: 336px;
+            width: 600px;
+            cursor: pointer;
+        }
+    </style>
     <header>
         <nav class="navbar">
             <img src="../../images/Vapor.png" height="90" class="Logo">
@@ -48,9 +56,9 @@
         </tr>
         <tr >
             <td style="vertical-align: top;">
-                <div class="gcover"><img src="/Store/Pictures/Sekiro_small.png"></div>
+                <div class="gcover"><img src="/Store/Pictures/Sekiro_small.png" class="gcover"></div>
                 <div"><input type="button" id="bb" class="button" name="buy" value="Buy"></div>
-                <div><input type="button" id="bb" class="button" name="ATC" value="Add To Cart"></div>
+                <div><input type="button" id="openWindow" class="button" name="ATC" value="Add To Cart"></div>
             </td>
             <td>
                 <div class="tt">
@@ -80,7 +88,32 @@ Internet connection required for asynchronous Multiplayer.">
                     </textarea>
                 </div>
             </td>
+            <td class="ss">
+                <table class="sss">
+                    <tr class="sss">
+                        <td class="sssss" colspan="4">
+                            <img src="/Store/Pictures/SSS1.png" id="Carousel" alt="CIMG" class="ssssss">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sssss ssh">
+                            <img src="/Store/Pictures/SSS2.png" class="ssss" onclick="changeImage(1)">
+                        </td>
+                        <td class="sssss ssh">
+                            <img src="/Store/Pictures/SSS3.png" class="ssss" onclick="changeImage(2)">
+                        </td>
+                        <td class="sssss ssh">
+                            <img src="/Store/Pictures/SSS4.png" class="ssss" onclick="changeImage(3)">
+                        </td>
+                        <td class="sssss ssh">
+                            <img src="/Store/Pictures/SSS5.png" class="ssss" onclick="changeImage(4)">
+                        </td>
+                        </td>
+                    </tr>
+                </table>
+            </td>
         </tr>
     </table>
+    <script src="../CSS/Carousel.js"></script>
 </body>
 </html>
