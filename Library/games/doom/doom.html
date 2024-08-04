@@ -1,0 +1,129 @@
+<html>
+	<!DOCTYPE html>
+	<html lang = "en">
+		<head>
+			<meta charset = "UTF-8"/>
+			<meta
+				http-equiv = "X-UA-Compatible"
+				content = "IE = edge"
+			/>
+			<meta
+				name = "viewport"
+				content = "width = device-width, 
+					   initial-scale = 1.0"
+			/>
+				<link href = "style.css" rel = "stylesheet">
+			<style>
+				.popup {
+					position: fixed;
+					z-index: 1;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					overflow: auto;
+					background-color: rgba(
+						0,
+						0,
+						0,
+						0.4
+					);
+					display: none;
+				}
+				.popup-content {
+					background-color: #272b2d;
+					margin: 10% auto;
+					padding: 20px;
+					border: 1px solid #888888;
+					width: 30%;
+					font-weight: bolder;
+				}
+				.popup-content button {
+					display: block;
+					margin: 0 auto;
+				}
+				.show {
+					display: block;
+				}
+				.popup-content-news {
+					margin: 10% auto;
+					padding: 20px;
+					border: 1px solid #888888;
+					width: 30%;
+					font-weight: bolder;
+					background-color: grey;
+					height: 400px;	
+				}
+			</style>
+		</head>
+		<title>
+				Vapor - Library
+		</title>
+		<link href = "style.css" rel = "stylesheet">
+
+<header>
+    <nav class="navbar">
+        <img style = "transform: rotate(90deg) ;" src = "Vapor.png" height="90" class = "Logo">
+
+        <ul class = "NavMenu">
+            <li class = "navItem">
+                <a href = "../../../Landing/Landing.html" class = "navLink">Home</a>
+            </li>
+            <li class = "navItem">
+                <a href = "../../../Store/Vapor store page.html" class = "navLink">Store</a>
+            </li>
+            <li class = "navItem">
+                <a href = "../../../Library/Library.html" class = "navLink">Library</a>
+            </li>
+            <li class="navItem">
+                <a href ="../../../Account/account.html" class = "navLink">Account</a>
+            </li>
+            <li class = "navItem">
+                <a href = "#" class = "navLink">Contact Us</a>
+            </li>
+            <li class = "navItem">
+                <a href = "#" class = "navLink">About Us</a>
+            </li>
+        </ul>
+        <div class = "NavSideBar">
+            <span class = "Bar"></span>
+            <span class = "Bar"></span>
+            <spHeader&SidebarCode/Header.jsan class = "Bar"></span>
+        </div>
+    </nav>
+</header>
+<body>
+<script src = "scripts/Header.js"></script>
+<script src = "scripts/popup.js"></script>
+
+<img src = "assets/images/doom.png"/>
+<table border = "0">
+	<tr>
+		<td>
+			<button id = "playbutton" class = "unifont" style = "background-color: green; border: none; height: 60px; width: 100px;">Play</button>
+			<div id = "popupcontent" class = "popup">
+				<div class = "popup-content">
+					<h1 style = "color: white; font-family: Consolas, Courier New, monospace;">
+						Launching DOOM...
+					</h1>
+					<button style = "color: white; font-family: Consolas, Courier New, monospace; border: 0px solid black;background-color: transparent;" id = "cancel">
+						Cancel
+					</button>
+				</div>
+			</div>
+			<script src = "scripts/popup.js"></script>
+		</td>
+		<td>
+			<form method = "get">
+				<input formaction = "../../../../Account/Achievements.html" style = "color: white; background-color:green; height: 60px; width: 100px; font-family: Consolas, Courier New, monospace; border: none;padding: 0%;" type = "submit" value = "Achievements">
+			</form>
+		</td>
+		<td>
+			<button class = "unifont" style = "text-align:left ;background-color: #272b2d65; border: none; height: 60px; width: 1338px;">
+				Playtime: 20 Hours
+			</button>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

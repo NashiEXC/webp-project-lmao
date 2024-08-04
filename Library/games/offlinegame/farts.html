@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+d<!DOCTYPE html>
   <html>
     <meta name = "viewport" content = "width=device-width, height = device-height, initial-scale = 1.0"/>
     <head>
@@ -23,17 +23,13 @@
         
         var myGamePiece;
         var myBackground;
-        var myObstacle;
         var mySound;
-        var x = document.getElementById("explosion");
+        var myObstacles = [];
 
           function startGame() {
-            myObstacle = new component(30, 200, "grey", 300, 120);
-            myObstacle2 = new component(30, 200, "grey", 340, 140);
-            myGamePiece = new component(140, 100, "assets/images/plane.png", 10, 120, "image");
+            myGamePiece = new component(90, 55, "assets/images/plane.png", 10, 120, "image");
             myBackground = new component(656, 270, "assets/images/sky.jpg", 0, 0, "image");
-            explosion = new component(100, 200, "assets/images/explosion.gif", 280, 50, "image");
-            mySound = new sound("assets/sounds/boom.mp3")
+            mySound = new sound("assets/sounds/boom.mp3");
             myGameArea.start();
             }
 
@@ -60,12 +56,17 @@
             this.canvas.height = 270;
             this.context = this.canvas.getContext("2d");
             document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+            this.frameNo = 0;
             this.interval = setInterval(updateGameArea, 20);
             window.addEventListener(
-              'keydown', function (e) {myGameArea.key = e.keyCode;}
-            )
+              'keydown', function (e) {
+                myGameArea.keys = (myGameArea.keys || []);
+                myGameArea.keys[e.keyCode] = true;
+            })
             window.addEventListener(
-              'keyup', function (e) {myGameArea.key = false;}
+              'keyup', function (e) {
+                myGameArea.keys[e.keyCode] = false;
+              }
             )
           },
           clear : function() {
@@ -75,6 +76,11 @@
             clearInterval(this.interval);
           }
         }
+        
+          function everyinterval(n) {
+            if ((myGameArea.frameNo / n) % 1 == 0) {return true;}
+            return false;
+          }
 
           function component(width, height, color, x, y, type) {
             this.type = type;
@@ -130,30 +136,40 @@
         }
 
           function updateGameArea() {
-            if (myGamePiece.crashWith(myObstacle), myGamePiece.crashWith(myObstacle2)) {
-              explosion.update();
-              const sound = new Audio("assets/sounds/boom.mp3");
-              y = true;
-              if (y = true);
+            var x, y;
+            for (i = 0; i < myObstacles.length; i += 1) {
+              if (myGamePiece.crashWith(myObstacles[i])) {
+                myGameArea.stop();
                 mySound.play();
-                setTimeout(stopsound, 700);
+              }
             }
-            else {
             myGameArea.clear();
-            myBackground.newPos();
-            myBackground.update();
-            myObstacle.update();
-            myObstacle2.update();
+            myGameArea.frameNo += 1;
+            if (myGameArea.frameNo == 1 || everyinterval(250)) {
+              x = myGameArea.canvas.width;
+              minHeight = 20;
+              maxHeight = 200;
+              height = Math.floor(Math.random() * (maxHeight - minHeight + 1) + minHeight);
+              minGap = 100;
+              maxGap = 200;
+              gap = Math.floor(Math.random() * (maxGap - minGap + 1) + minGap);
+              myObstacles.push(new component(25, height,"grey", x, 0));
+              myObstacles.push(new component(25, x - height - gap, "grey", x, height + gap));
+            }
+            for (i = 0; i < myObstacles.length; i += 1) {
+              myObstacles[i].x += -1;
+              myObstacles[i].update();
+            }
             myGamePiece.speedX = 0;
             myGamePiece.speedY = 0;
-            if (myGameArea.key && myGameArea.key == 65) {myGamePiece.speedX = -1.5; }
-            if (myGameArea.key && myGameArea.key == 68) {myGamePiece.speedX = 1.5; }
-            if (myGameArea.key && myGameArea.key == 87) {myGamePiece.speedY = -1.5; }
-            if (myGameArea.key && myGameArea.key == 83) {myGamePiece.speedY = 1.5; }
+            if (myGameArea.keys && myGameArea.keys[65]) {myGamePiece.speedX = -1.5; }
+            if (myGameArea.keys && myGameArea.keys[68]) {myGamePiece.speedX = 1.5; }
+            if (myGameArea.keys && myGameArea.keys[87]) {myGamePiece.speedY = -1.5; }
+            if (myGameArea.keys && myGameArea.keys[83]) {myGamePiece.speedY = 1.5; }
             myGamePiece.newPos();
             myGamePiece.update();
           }
-        }
+        
 
           function moveup() {
             myGamePiece.speedY -= 1;

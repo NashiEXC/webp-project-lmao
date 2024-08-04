@@ -94,8 +94,8 @@
 				</div>
 			</nav>
 		</header>
-		<script src="Header.js"></script>
-
+		<script src="scripts/Header.js"></script>
+<div class="container">
 		<br/>
 		<br/>
 		<table class = "newstable" border = "4" cellspacing = "10">
@@ -237,7 +237,7 @@
 									<input style = "border: 0px solid black; background-color: transparent;width: 100%; height: 175" value = "" type = "submit"/>
 								</form>
 								
-									<button id = "playbuttpen" style = "border: 0px solid black; background-color: transparent;">
+								<button id = "playbuttpen" style = "border: 0px solid black; background-color: transparent;">
 									<img style = "margin-left: -10px; margin-bottom: -1px;" src = images/play.png alt = "Install">
 								</button>
 								<div id = "popupcontent" class = "popup">
@@ -252,6 +252,9 @@
 								</div>
 							</td>
 							<td class = "others" valign = "bottom" style = "width: 16%; background-image: url(images/pd3.png);"> 
+								<form method = "get" action = "games\payday3\payday3.html">
+									<input style = "border: 0px solid black; background-color: transparent;width: 100%; height: 175" value = "" type = "submit"/>
+								</form>
 								<button id = "playpd3" style = "border: 0px solid black;background-color: transparent;">
 									<img style = "margin-left: -10px; margin-bottom: -1px;" src = images/play.png alt = "Install">
 								</button>
@@ -267,6 +270,9 @@
 									</div>
 								</td>
 								<td class = "others" valign = "bottom" style = "width: 16%; background-image: url(images/doom.png);"> 
+									<form method = "get" action = "games\doom\doom.html">
+										<input style = "border: 0px solid black; background-color: transparent;width: 100%; height: 175" value = "" type = "submit"/>
+									</form>
 									<button id = "playdoom" style = "border: 0px solid black;background-color: transparent;">
 										<img style = "margin-left: -10px; margin-bottom: -1px;" src = images/play.png alt = "Install">
 									</button>
@@ -323,6 +329,7 @@
 				</tr>
 			</table>
 			<br/>
+		</div>
 
 			<!--FOOTER-->
 			<div class="footer">
@@ -352,7 +359,7 @@
 				</figure>
 			</div>
 
-        <script src = "popup.js">
+        <script src = "scripts/popup.js">
 		</script>
     </body>
 </html>
